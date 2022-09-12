@@ -1,13 +1,10 @@
 import { MantineProvider } from '@mantine/core';
-import { NotificationsProvider } from '@mantine/notifications';
-// import { css, Global } from '@emotion/react';
-import { AnimatePresence } from 'framer-motion';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import NextNProgress from 'nextjs-progressbar';
-
 import 'windi.css';
+import NextNProgress from '../components/NextNProgress';
 import '../styles/globals.css';
+import '../styles/nprogress.css';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
 	return (
@@ -15,7 +12,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 			<Head>
 				<title>Parbez</title>
 				<meta name="title" content="Parbez - A Developer" />
-				<link rel="icon" type="image/png" href="/favicon.png" />
+				<link rel="icon" type="image/png" href="/favicon.ico" />
 				<meta name="description" content="A Developer who loves to code" />
 				<meta name="keywords" content="developer,webdeveloper,backenddeveloper" />
 				<meta name="robots" content="index, follow" />
@@ -30,32 +27,20 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 				withNormalizeCSS
 				withGlobalStyles
 			>
-				<NotificationsProvider>
-					<NextNProgress
-						color="#bf3df4"
-						// transformCSS={(cssString) => {
-						// 	const style = css`
-						// 		${cssString}
-						// 	`;
-						// 	return <Global styles={style} />;
-						// }}
-					/>
-					<AnimatePresence>
-						<div className="min-h-screen bg-true-gray-900 bg-fixed background-image select-none">
-							{/* <nav >
+				<NextNProgress />
+				<div className="min-h-screen bg-true-gray-900 bg-fixed background-image select-none">
+					{/* <nav >
 										<Navbar />
 									</nav> */}
 
-							<div className="max-w-8xl mx-auto px-4 h-full">
-								<Component {...pageProps} />
-							</div>
+					<div className="max-w-8xl mx-auto px-4 h-full">
+						<Component {...pageProps} />
+					</div>
 
-							{/* <footer className="absolute left-0 w-full">
+					{/* <footer className="absolute left-0 w-full">
 									<Footer />
 								</footer> */}
-						</div>
-					</AnimatePresence>
-				</NotificationsProvider>
+				</div>
 			</MantineProvider>
 		</div>
 	);
