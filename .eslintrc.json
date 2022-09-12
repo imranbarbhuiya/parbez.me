@@ -1,3 +1,26 @@
 {
-  "extends": "next/core-web-vitals"
+	"root": true,
+	"extends": ["@sapphire", "next/core-web-vitals"],
+	"ignorePatterns": ["**/dist/*", "next-env.d.ts", "next.config.js"],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"project": "./tsconfig.json"
+	},
+	"rules": {
+		"@typescript-eslint/consistent-type-imports": "error",
+		"@typescript-eslint/await-thenable": "error",
+		"@typescript-eslint/no-unsafe-member-access": "error",
+		"@typescript-eslint/no-unsafe-argument": "error",
+		"@typescript-eslint/no-unsafe-assignment": "error",
+		"@typescript-eslint/no-explicit-any": "warn",
+		"@typescript-eslint/no-unnecessary-condition": "error",
+		"@typescript-eslint/no-unnecessary-type-assertion": "error",
+		"no-console": [
+			"error",
+			{
+				"allow": ["warn", "error"]
+			}
+		],
+		"no-empty": ["error", { "allowEmptyCatch": true }]
+	}
 }
