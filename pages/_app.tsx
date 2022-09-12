@@ -1,8 +1,9 @@
 import { MantineProvider } from '@mantine/core';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import NextNProgress from '#components/NextNProgress';
+
 import 'windi.css';
-import NextNProgress from '../components/NextNProgress';
 import '../styles/globals.css';
 import '../styles/nprogress.css';
 
