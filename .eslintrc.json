@@ -1,18 +1,16 @@
 {
 	"root": true,
-	"extends": ["neon/common", "neon/node", "neon/typescript", "neon/prettier", "neon/react", "neon/next", "neon/edge"],
+	"extends": [
+		"mahir/common",
+		"mahir/node",
+		"mahir/typescript",
+		"mahir/prettier",
+		"mahir/react",
+		"mahir/next",
+		"mahir/edge"
+	],
 	"ignorePatterns": ["**/dist/*", "next-env.d.ts", "next.config.js"],
 	"parserOptions": {
 		"project": "./tsconfig.json"
-	},
-	"settings": {
-		"react": {
-			"version": "detect"
-		}
-	},
-	"rules": {
-		"react/react-in-jsx-scope": 0,
-		"react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
-		"@typescript-eslint/consistent-type-definitions": ["error", "interface"]
 	}
 }

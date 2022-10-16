@@ -1,43 +1,49 @@
+import { css, Global } from '@emotion/react';
 import { MantineProvider } from '@mantine/core';
-import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import NextNProgress from '#components/NextNProgress';
+import NextNProgress from 'nextjs-progressbar';
+
+import type { AppProps } from 'next/app';
 
 import 'windi.css';
 import '../styles/globals.css';
-import '../styles/nprogress.css';
+
+const transformCSS = (cssString: string) => {
+	const style = css`
+		${cssString}
+	`;
+	return <Global styles={style} />;
+};
 
 export default function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<div>
 			<Head>
 				<title>Parbez</title>
-				<meta name="title" content="Parbez - A Developer" />
-				<link rel="icon" type="image/png" href="/favicon.ico" />
-				<meta name="description" content="A Developer who loves to code" />
-				<meta name="keywords" content="developer,webdeveloper,backenddeveloper" />
-				<meta name="robots" content="index, follow" />
-				<meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-				<meta name="language" content="English" />
-				<meta name="author" content="Parbez" />
+				<meta content="Parbez - A Developer" name="title" />
+				<link href="/favicon.ico" rel="icon" type="image/png" />
+				<meta content="A Developer who loves to code" name="description" />
+				<meta content="developer,webdeveloper,backenddeveloper" name="keywords" />
+				<meta content="index, follow" name="robots" />
+				<meta content="text/html; charset=utf-8" httpEquiv="Content-Type" />
+				<meta content="English" name="language" />
+				<meta content="Parbez" name="author" />
 			</Head>
 			<MantineProvider
 				theme={{
 					colorScheme: 'dark',
 				}}
-				withNormalizeCSS
 				withGlobalStyles
+				withNormalizeCSS
 			>
-				<NextNProgress />
+				<NextNProgress transformCSS={transformCSS} />
 				<div className="min-h-screen bg-true-gray-900 bg-fixed background-image select-none">
 					{/* <nav >
 										<Navbar />
 									</nav> */}
-
 					<div className="max-w-8xl mx-auto px-4 h-full">
 						<Component {...pageProps} />
 					</div>
-
 					{/* <footer className="absolute left-0 w-full">
 									<Footer />
 								</footer> */}
