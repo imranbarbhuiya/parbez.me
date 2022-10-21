@@ -30,7 +30,7 @@
 		"@windicss/plugin-animations": "^1.0.9",
 		"@windicss/plugin-scrollbar": "^1.2.3",
 		"eslint": "8.25.0",
-		"eslint-config-mahir": "^0.0.11",
+		"eslint-config-mahir": "^0.0.12",
 		"prettier": "^2.7.1",
 		"typescript": "4.8.4",
 		"windicss": "^3.5.6",
