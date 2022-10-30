@@ -345,64 +345,64 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/core@npm:^5.6.1":
-  version: 5.6.1
-  resolution: "@mantine/core@npm:5.6.1"
+"@mantine/core@npm:^5.6.3":
+  version: 5.6.3
+  resolution: "@mantine/core@npm:5.6.3"
   dependencies:
     "@floating-ui/react-dom-interactions": ^0.10.1
-    "@mantine/styles": 5.6.1
-    "@mantine/utils": 5.6.1
+    "@mantine/styles": 5.6.3
+    "@mantine/utils": 5.6.3
     "@radix-ui/react-scroll-area": 1.0.0
     react-textarea-autosize: 8.3.4
   peerDependencies:
-    "@mantine/hooks": 5.6.1
+    "@mantine/hooks": 5.6.3
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 352f7a8d710fce5c3128d7f366dfd1b2ddcd714ca491ae1e89a77a95bb4e7d9ba4824647abcaeafb28017157a7b023b90ac87adbb67e8f970f35dce53f2153ae
+  checksum: 58badc6009d389d9bbc0e3614cebc4ec31c97b6e43ed65d6f0918e96e8e4d40d45fe13d0f2b7d1970657b6eb6e18b2d29006325bd0b15d6e2423b872ee1e8718
   languageName: node
   linkType: hard
 
-"@mantine/hooks@npm:^5.6.1":
-  version: 5.6.1
-  resolution: "@mantine/hooks@npm:5.6.1"
+"@mantine/hooks@npm:^5.6.3":
+  version: 5.6.3
+  resolution: "@mantine/hooks@npm:5.6.3"
   peerDependencies:
     react: ">=16.8.0"
-  checksum: a34b5917b0e57f5c8f80bc27fca31eab0b071fe167e4d99f3e2c64b7fcf995df5752ae45024128ddf7ab861667518628fbad863a0c7e90fe4f7d6cf4855812cc
+  checksum: d09a661e543d724e61efa22ad38b938e13b09583c9746bb799a53fcc9421b781ec2fda7651208cbf1662032146d5dcf8bcfbaafe9db1ff8f9758790624e95e94
   languageName: node
   linkType: hard
 
-"@mantine/next@npm:^5.6.1":
-  version: 5.6.1
-  resolution: "@mantine/next@npm:5.6.1"
+"@mantine/next@npm:^5.6.3":
+  version: 5.6.3
+  resolution: "@mantine/next@npm:5.6.3"
   dependencies:
-    "@mantine/ssr": 5.6.1
-    "@mantine/styles": 5.6.1
+    "@mantine/ssr": 5.6.3
+    "@mantine/styles": 5.6.3
   peerDependencies:
     next: "*"
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 5de272c283887b7c9722a25cd8b9f133632743865b2e3bcf6edff38b39ac9c547a2217539df72cee433edbc28279e9797cc5735fbb31ad75552baf580cf6d469
+  checksum: f278a0eb1286fc05a45293bbc0ea0994d875c5660c5b11f07f7c560d8d659dd5d64fde5747c93d1a51c63f94e8db6379dacaf9e21802265a8054ea4fdc372985
   languageName: node
   linkType: hard
 
-"@mantine/ssr@npm:5.6.1":
-  version: 5.6.1
-  resolution: "@mantine/ssr@npm:5.6.1"
+"@mantine/ssr@npm:5.6.3":
+  version: 5.6.3
+  resolution: "@mantine/ssr@npm:5.6.3"
   dependencies:
-    "@mantine/styles": 5.6.1
+    "@mantine/styles": 5.6.3
     html-react-parser: 1.4.12
   peerDependencies:
     "@emotion/react": ">=11.9.0"
     "@emotion/server": ">=11.4.0"
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 390803d47aab6732ac318310f9f2704bb60767135a8dbd880d1ac56017f048bd5e885406519b347c7343b278bf65e5585014ecc40e043e52b8ba0f89f760047a
+  checksum: 4d540e9bad7e342a7b94536078b4e4a663af02bc6cc8c402dde47ae338a0b43f901cff4fe2f82e414cfd8f7c9db296573d8e1ace00ea0372a9fbdb1511a3dc84
   languageName: node
   linkType: hard
 
-"@mantine/styles@npm:5.6.1":
-  version: 5.6.1
-  resolution: "@mantine/styles@npm:5.6.1"
+"@mantine/styles@npm:5.6.3":
+  version: 5.6.3
+  resolution: "@mantine/styles@npm:5.6.3"
   dependencies:
     clsx: 1.1.1
     csstype: 3.0.9
@@ -410,16 +410,16 @@ __metadata:
     "@emotion/react": ">=11.9.0"
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: a0103279b6ee5f884ba81d5992a39288a78ab249b7ba49b1da30233a24217967e63e204eac9d77eccaeab75be8e74298a84b1d70052d06fca9f7ead7645921df
+  checksum: 4a205cbc4a363ff829f375563d0275247003b4362daa074cde4e87507d8f031b0e98baed4ef3449c91d653bfb2deb4de22841d02196ef1c6050b95ad8da1dec1
   languageName: node
   linkType: hard
 
-"@mantine/utils@npm:5.6.1":
-  version: 5.6.1
-  resolution: "@mantine/utils@npm:5.6.1"
+"@mantine/utils@npm:5.6.3":
+  version: 5.6.3
+  resolution: "@mantine/utils@npm:5.6.3"
   peerDependencies:
     react: ">=16.8.0"
-  checksum: 97b366f91141d6a0ec4d6ab24f385db3046164c099ee5f9e4dd81f99deceef4ef46c6803ef0ecfee826a4695122ccd3b33a6e163aea91c573a18c50bb219d2b0
+  checksum: 233e3a9f8a29d542a18e114a726c3559fee638e19f05e21d2fbabe476386668f13bbe56119be6efd1ccf94e4f47d431804ff83ce168821027cccd228cdb1af55
   languageName: node
   linkType: hard
 
@@ -3907,9 +3907,9 @@ __metadata:
   dependencies:
     "@emotion/react": ^11.10.4
     "@emotion/server": ^11.10.0
-    "@mantine/core": ^5.6.1
-    "@mantine/hooks": ^5.6.1
-    "@mantine/next": ^5.6.1
+    "@mantine/core": ^5.6.3
+    "@mantine/hooks": ^5.6.3
+    "@mantine/next": ^5.6.3
     "@types/node": 18.11.0
     "@types/prettier": ^2.7.1
     "@types/react": 18.0.21
