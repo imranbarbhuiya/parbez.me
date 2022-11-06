@@ -29,7 +29,7 @@
 		"@types/sharp": "^0.31.0",
 		"@windicss/plugin-animations": "^1.0.9",
 		"@windicss/plugin-scrollbar": "^1.2.3",
-		"eslint": "8.26.0",
+		"eslint": "8.27.0",
 		"eslint-config-mahir": "^0.0.13",
 		"prettier": "^2.7.1",
 		"typescript": "4.8.4",
