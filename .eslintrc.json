@@ -1,0 +1,17 @@
+{
+	"root": true,
+	"extends": [
+		"mahir/common",
+		"mahir/node",
+		"mahir/typescript",
+		"mahir/prettier",
+		"mahir/react",
+		"mahir/next",
+		"mahir/edge",
+		"@unocss"
+	],
+	"ignorePatterns": ["**/dist/*", "next-env.d.ts", "next.config.js"],
+	"parserOptions": {
+		"project": "./tsconfig.json"
+	}
+}
