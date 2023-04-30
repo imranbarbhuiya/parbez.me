@@ -13,16 +13,16 @@
 	},
 	"dependencies": {
 		"@unocss/reset": "^0.51.8",
-		"next": "13.3.1",
+		"next": "13.3.2",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
-		"sharp": "^0.32.0"
+		"sharp": "^0.32.1"
 	},
 	"devDependencies": {
-		"@types/node": "18.16.0",
+		"@types/node": "18.16.3",
 		"@types/prettier": "^2.7.2",
-		"@types/react": "18.0.38",
-		"@types/react-dom": "18.0.11",
+		"@types/react": "18.2.0",
+		"@types/react-dom": "18.2.1",
 		"@types/sharp": "^0.31.1",
 		"@unocss/cli": "^0.51.8",
 		"@unocss/eslint-config": "^0.51.8",
