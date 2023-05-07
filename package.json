@@ -13,25 +13,25 @@
 	},
 	"dependencies": {
 		"@unocss/reset": "^0.51.12",
-		"next": "13.3.2",
+		"next": "13.4.1",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"sharp": "^0.32.1"
 	},
 	"devDependencies": {
-		"@types/node": "18.16.3",
+		"@types/node": "18.16.5",
 		"@types/prettier": "^2.7.2",
-		"@types/react": "18.2.0",
-		"@types/react-dom": "18.2.1",
+		"@types/react": "18.2.6",
+		"@types/react-dom": "18.2.4",
 		"@types/sharp": "^0.31.1",
 		"@unocss/cli": "^0.51.12",
 		"@unocss/eslint-config": "^0.51.12",
 		"concurrently": "^8.0.1",
-		"eslint": "8.39.0",
-		"eslint-config-mahir": "^0.0.25",
+		"eslint": "8.40.0",
+		"eslint-config-mahir": "^0.0.26",
 		"prettier": "^2.8.8",
 		"typescript": "5.0.4",
 		"unocss": "^0.51.12"
 	},
-	"packageManager": "yarn@3.5.0"
+	"packageManager": "yarn@3.5.1"
 }
