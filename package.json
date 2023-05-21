@@ -13,13 +13,13 @@
 	},
 	"dependencies": {
 		"@unocss/reset": "^0.51.13",
-		"next": "13.4.2",
+		"next": "13.4.3",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"sharp": "^0.32.1"
 	},
 	"devDependencies": {
-		"@types/node": "18.16.9",
+		"@types/node": "18.16.13",
 		"@types/prettier": "^2.7.2",
 		"@types/react": "18.2.6",
 		"@types/react-dom": "18.2.4",
@@ -27,7 +27,7 @@
 		"@unocss/cli": "^0.51.13",
 		"@unocss/eslint-config": "^0.51.13",
 		"concurrently": "^8.0.1",
-		"eslint": "8.40.0",
+		"eslint": "8.41.0",
 		"eslint-config-mahir": "^0.0.26",
 		"prettier": "^2.8.8",
 		"typescript": "5.0.4",
