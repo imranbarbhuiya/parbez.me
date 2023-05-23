@@ -67,3 +67,12 @@
 		background-position: 0% 50%;
 	}
 }
+
+::selection {
+	color: #fff;
+	background: #df0790;
+}
+::-moz-selection {
+	color: #000;
+	background: #df0790;
+}

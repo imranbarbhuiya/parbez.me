@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { Jost } from 'next/font/google';
 
 import '@unocss/reset/tailwind-compat.css';
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body className="m-0 box-border min-h-screen w-full flex-center bg-dark-500 p-0 text-white">
 				<div className="mx-auto max-w-[88rem] min-h-full flex-center py-10" style={jost.style}>
 					{children}
+					<Analytics />
 				</div>
 			</body>
 		</html>
