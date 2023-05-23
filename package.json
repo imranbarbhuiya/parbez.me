@@ -1,0 +1,38 @@
+{
+	"name": "parbez",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"generate:css": "unocss 'app/**/*.tsx' --out-file ./app/unocss.css",
+		"dev": "concurrently --kill-others 'yarn generate:css --watch' 'next dev'",
+		"build": "yarn generate:css && next build",
+		"start": "next start",
+		"lint": "TIMING=1 next lint --fix",
+		"format": "prettier --write --cache ."
+	},
+	"dependencies": {
+		"@tabler/icons-react": "^2.20.0",
+		"@unocss/reset": "^0.52.1",
+		"next": "13.4.3",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"sharp": "^0.32.1"
+	},
+	"devDependencies": {
+		"@types/node": "20.2.3",
+		"@types/prettier": "^2.7.2",
+		"@types/react": "18.2.6",
+		"@types/react-dom": "18.2.4",
+		"@types/sharp": "^0.32.0",
+		"@unocss/cli": "^0.52.1",
+		"@unocss/eslint-config": "^0.52.1",
+		"concurrently": "^8.0.1",
+		"eslint": "8.41.0",
+		"eslint-config-mahir": "^0.0.26",
+		"prettier": "^2.8.8",
+		"typescript": "5.0.4",
+		"unocss": "^0.52.1"
+	},
+	"packageManager": "yarn@3.5.1"
+}
