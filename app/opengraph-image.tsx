@@ -18,7 +18,11 @@ export default function Image() {
 					display: 'flex',
 					alignItems: 'center',
 					justifyContent: 'space-around',
-					backgroundColor: 'black',
+					backgroundColor: '#030303',
+					backgroundImage:
+						'radial-gradient(circle at 25px 25px, #333 2%, transparent 0%), radial-gradient(circle at 75px 75px, #333 2%, transparent 0%)',
+					backgroundSize: '100px 100px',
+					backgroundPosition: '-30px -10px',
 					flexDirection: 'column',
 					width: '100%',
 					height: '100%',
