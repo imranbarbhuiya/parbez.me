@@ -30,7 +30,7 @@
 		"@unocss/eslint-config": "^0.53.5",
 		"concurrently": "^8.2.0",
 		"eslint": "8.45.0",
-		"eslint-config-mahir": "^0.0.27",
+		"eslint-config-mahir": "^0.0.29",
 		"prettier": "^3.0.0",
 		"typescript": "5.1.6",
 		"unocss": "^0.53.5"
