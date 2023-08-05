@@ -17,7 +17,7 @@ const jost = Jost({
 	weight: '500',
 });
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { readonly children: React.ReactNode }) {
 	return (
 		<html lang="en">
 			<body className="m-0 box-border min-h-screen w-full flex-center bg-dark-500 p-0 text-white">

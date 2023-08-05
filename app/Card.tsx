@@ -9,11 +9,11 @@ export const Card = ({
 	image,
 	url,
 }: {
-	description: string;
-	image: string;
-	position: string;
-	title: string;
-	url: string;
+	readonly description: string;
+	readonly image: string;
+	readonly position: string;
+	readonly title: string;
+	readonly url: string;
 }) => {
 	return (
 		<div className="gradient-border w-70 flex flex-col items-center justify-center gap-5 rounded-lg bg-dark-400 p-5">
