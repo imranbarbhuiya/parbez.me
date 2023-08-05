@@ -23,7 +23,7 @@
 		"noFallthroughCasesInSwitch": true,
 		"noUnusedParameters": true,
 		"pretty": true,
-		"moduleResolution": "node",
+		"moduleResolution": "node16",
 		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"jsx": "preserve",
