@@ -138,17 +138,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eslint/js@npm:8.48.0":
+  version: 8.48.0
+  resolution: "@eslint/js@npm:8.48.0"
+  checksum: b2755f9c0ee810c886eba3c50dcacb184ba5a5cd1cbc01988ee506ad7340653cae0bd55f1d95c64b56dfc6d25c2caa7825335ffd2c50165bae9996fe0f396851
+  languageName: node
+  linkType: hard
+
 "@eslint/js@npm:^8.46.0":
   version: 8.46.0
   resolution: "@eslint/js@npm:8.46.0"
   checksum: 7aed479832302882faf5bec37e9d068f270f84c19b3fb529646a7c1b031e73a312f730569c78806492bc09cfce3d7651dfab4ce09a56cbb06bc6469449e56377
-  languageName: node
-  linkType: hard
-
-"@eslint/js@npm:^8.47.0":
-  version: 8.47.0
-  resolution: "@eslint/js@npm:8.47.0"
-  checksum: 0ef57fe27b6d4c305b33f3b2d2fee1ab397a619006f1d6f4ce5ee4746b8f03d11a4e098805a7d78601ca534cf72917d37f0ac19896c992a32e26299ecb9f9de1
   languageName: node
   linkType: hard
 
@@ -452,22 +452,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tabler/icons-react@npm:^2.31.0":
-  version: 2.31.0
-  resolution: "@tabler/icons-react@npm:2.31.0"
+"@tabler/icons-react@npm:^2.32.0":
+  version: 2.32.0
+  resolution: "@tabler/icons-react@npm:2.32.0"
   dependencies:
-    "@tabler/icons": 2.31.0
+    "@tabler/icons": 2.32.0
     prop-types: ^15.7.2
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0
-  checksum: 40cc56d1c8038d058c9f7185a73be97b6f55832bcf7ad239f8f6e1c983cd1669d2a8c16cb665f979867669a762b6e31ff8b2dc9e92a658df1103e1b1ef7355ec
+  checksum: 84ad274623ae442ef8d6ff1344f15d4ce804f902eca93a44f0dcf0bf3e89f0c1e5b9b1d1400bf9248afeb1d8a10f6bbef672edb9c509527250ed956669dc7d45
   languageName: node
   linkType: hard
 
-"@tabler/icons@npm:2.31.0":
-  version: 2.31.0
-  resolution: "@tabler/icons@npm:2.31.0"
-  checksum: 2a273ef996592b9fc490a29bb96cb310e84c4e8b7eeb7a0b8ddceab389049c38b54dbe04965544280e69e4ba68b4f8204bbcc18791d7fbd00bf87ce8a165122d
+"@tabler/icons@npm:2.32.0":
+  version: 2.32.0
+  resolution: "@tabler/icons@npm:2.32.0"
+  checksum: e30639cbb88b4a8f7bb8216aa9f34836205d3e09509d3b1acaf526e5cb7cbd61a79f35e694adaf2d63054942a2beca4cdfb14bfb1e1526b7604c66c06cf36f99
   languageName: node
   linkType: hard
 
@@ -492,10 +492,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.5.1":
-  version: 20.5.1
-  resolution: "@types/node@npm:20.5.1"
-  checksum: 3dbe611cd67afa987102c8558ee70f848949c5dcfee5f60abc073e55c0d7b048e391bf06bb1e0dc052cb7210ca97136ac496cbaf6e89123c989de6bd125fde82
+"@types/node@npm:20.5.6":
+  version: 20.5.6
+  resolution: "@types/node@npm:20.5.6"
+  checksum: d2ce44f1cfa3fd00fe7426f7cf9a46d680cd57802b874ed5618e7d9101a9c6b8de37f08c0e7185ee06fb363ad492549c3ea69665c7e8e31c7813210ed8e89005
   languageName: node
   linkType: hard
 
@@ -540,14 +540,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.2.20":
-  version: 18.2.20
-  resolution: "@types/react@npm:18.2.20"
+"@types/react@npm:18.2.21":
+  version: 18.2.21
+  resolution: "@types/react@npm:18.2.21"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 30f699c60e5e4bfef273ce64d320651cdd60f5c6a08361c6c7eca8cebcccda1ac953d2ee57c9f321b5ae87f8a62c72b6d35ca42df0e261d337849952daab2141
+  checksum: ffed203bfe7aad772b8286f7953305c9181ac3a8f27d3f5400fbbc2a8e27ca8e5bbff818ee014f39ca0d19d2b3bb154e5bdbec7e232c6f80b59069375aa78349
   languageName: node
   linkType: hard
 
@@ -1651,9 +1651,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"concurrently@npm:^8.2.0":
-  version: 8.2.0
-  resolution: "concurrently@npm:8.2.0"
+"concurrently@npm:^8.2.1":
+  version: 8.2.1
+  resolution: "concurrently@npm:8.2.1"
   dependencies:
     chalk: ^4.1.2
     date-fns: ^2.30.0
@@ -1667,7 +1667,7 @@ __metadata:
   bin:
     conc: dist/bin/concurrently.js
     concurrently: dist/bin/concurrently.js
-  checksum: eafe6a4d9b7fda87f55ea285cfc6acd937a5286ceec8991ab48e6cc27c45fce6a5c6f45e18d7555defa15dc7d7e8941bc5a9d1ceaf182e31441d420e00333434
+  checksum: 216cb16d5b301cbd9c657b19430836d1686fe8fa9b9ef35ef7ac601e1a5cf6535166a3e57de446696dbd5e7e3f45d78fc70f33c5fd4bb565342cd5e752c5b069
   languageName: node
   linkType: hard
 
@@ -2276,14 +2276,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:8.47.0":
-  version: 8.47.0
-  resolution: "eslint@npm:8.47.0"
+"eslint@npm:8.48.0":
+  version: 8.48.0
+  resolution: "eslint@npm:8.48.0"
   dependencies:
     "@eslint-community/eslint-utils": ^4.2.0
     "@eslint-community/regexpp": ^4.6.1
     "@eslint/eslintrc": ^2.1.2
-    "@eslint/js": ^8.47.0
+    "@eslint/js": 8.48.0
     "@humanwhocodes/config-array": ^0.11.10
     "@humanwhocodes/module-importer": ^1.0.1
     "@nodelib/fs.walk": ^1.2.8
@@ -2319,7 +2319,7 @@ __metadata:
     text-table: ^0.2.0
   bin:
     eslint: bin/eslint.js
-  checksum: 1988617f703eadc5c7540468d54dc8e5171cf2bb9483f6172799cd1ff54a9a5e4470f003784e8cef92687eaa14de37172732787040e67817581a20bcb9c15970
+  checksum: f20b359a4f8123fec5c033577368cc020d42978b1b45303974acd8da7a27063168ee3fe297ab5b35327162f6a93154063e3ce6577102f70f9809aff793db9bd0
   languageName: node
   linkType: hard
 
@@ -4075,25 +4075,25 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "parbez@workspace:."
   dependencies:
-    "@tabler/icons-react": ^2.31.0
-    "@types/node": 20.5.1
+    "@tabler/icons-react": ^2.32.0
+    "@types/node": 20.5.6
     "@types/prettier": ^2.7.3
-    "@types/react": 18.2.20
+    "@types/react": 18.2.21
     "@types/react-dom": 18.2.7
     "@types/sharp": ^0.32.0
     "@unocss/cli": ^0.55.3
     "@unocss/eslint-config": ^0.55.3
     "@unocss/reset": ^0.55.3
     "@vercel/analytics": ^1.0.2
-    concurrently: ^8.2.0
-    eslint: 8.47.0
+    concurrently: ^8.2.1
+    eslint: 8.48.0
     eslint-config-mahir: ^0.0.31
     next: 13.4.19
     prettier: ^3.0.2
     react: 18.2.0
     react-dom: 18.2.0
     sharp: ^0.32.5
-    typescript: 5.1.6
+    typescript: 5.2.2
     unocss: ^0.55.3
   languageName: unknown
   linkType: soft
@@ -5205,7 +5205,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:5.1.6, typescript@npm:^5.1.6":
+"typescript@npm:5.2.2":
+  version: 5.2.2
+  resolution: "typescript@npm:5.2.2"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 7912821dac4d962d315c36800fe387cdc0a6298dba7ec171b350b4a6e988b51d7b8f051317786db1094bd7431d526b648aba7da8236607febb26cf5b871d2d3c
+  languageName: node
+  linkType: hard
+
+"typescript@npm:^5.1.6":
   version: 5.1.6
   resolution: "typescript@npm:5.1.6"
   bin:
@@ -5215,7 +5225,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@5.1.6#~builtin<compat/typescript>, typescript@patch:typescript@^5.1.6#~builtin<compat/typescript>":
+"typescript@patch:typescript@5.2.2#~builtin<compat/typescript>":
+  version: 5.2.2
+  resolution: "typescript@patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 0f4da2f15e6f1245e49db15801dbee52f2bbfb267e1c39225afdab5afee1a72839cd86000e65ee9d7e4dfaff12239d28beaf5ee431357fcced15fb08583d72ca
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^5.1.6#~builtin<compat/typescript>":
   version: 5.1.6
   resolution: "typescript@patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"
   bin:
