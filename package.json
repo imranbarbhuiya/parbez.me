@@ -14,26 +14,26 @@
 	"dependencies": {
 		"@tabler/icons-react": "^2.38.0",
 		"@unocss/reset": "^0.56.4",
-		"@vercel/analytics": "^1.0.2",
-		"next": "13.5.3",
+		"@vercel/analytics": "^1.1.0",
+		"next": "13.5.4",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"sharp": "^0.32.6"
 	},
 	"devDependencies": {
-		"@types/node": "20.8.0",
+		"@types/node": "20.8.3",
 		"@types/prettier": "^2.7.3",
-		"@types/react": "18.2.24",
-		"@types/react-dom": "18.2.8",
+		"@types/react": "18.2.25",
+		"@types/react-dom": "18.2.11",
 		"@types/sharp": "^0.32.0",
 		"@unocss/cli": "^0.56.4",
 		"@unocss/eslint-config": "^0.56.4",
 		"concurrently": "^8.2.1",
-		"eslint": "8.50.0",
+		"eslint": "8.51.0",
 		"eslint-config-mahir": "^0.0.33",
 		"prettier": "^3.0.3",
 		"typescript": "5.2.2",
 		"unocss": "^0.56.4"
 	},
-	"packageManager": "yarn@3.6.3"
+	"packageManager": "yarn@3.6.4"
 }
