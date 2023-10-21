@@ -73,7 +73,7 @@ export default function Page() {
 					<Card
 						description="A platform to find flat and flatmates"
 						image="https://cdn.discordapp.com/attachments/910956656387567686/1110488678737911848/flatshare.png"
-						position="Backend Developer"
+						position="Software Developer"
 						title="Flatshare"
 						url="https://joinflatshare.com"
 					/>
