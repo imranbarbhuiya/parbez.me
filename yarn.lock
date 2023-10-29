@@ -263,7 +263,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:^13.5.5":
+"@next/eslint-plugin-next@npm:^13.5.6":
   version: 13.5.6
   resolution: "@next/eslint-plugin-next@npm:13.5.6"
   dependencies:
@@ -435,22 +435,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tabler/icons-react@npm:^2.39.0":
-  version: 2.39.0
-  resolution: "@tabler/icons-react@npm:2.39.0"
+"@tabler/icons-react@npm:^2.40.0":
+  version: 2.40.0
+  resolution: "@tabler/icons-react@npm:2.40.0"
   dependencies:
-    "@tabler/icons": 2.39.0
+    "@tabler/icons": 2.40.0
     prop-types: ^15.7.2
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0
-  checksum: d3d671e5d3d265b1eefa773d45bb101bc9de228c7ac24d1c486cf86339b5ad4ce55a4225cb3fe04f45d260763dbf6e9712f3c208e4c7898731700f3eb716b8e0
+  checksum: e50255a18dd5c4c50a3bcd85caad4b71ca4d76e67bf21df9df4c2c0788dec1e9fcb306a15109eaa317a9d3d841e8c33f023dd7af9ac32a1e3e14abb798dfae5b
   languageName: node
   linkType: hard
 
-"@tabler/icons@npm:2.39.0":
-  version: 2.39.0
-  resolution: "@tabler/icons@npm:2.39.0"
-  checksum: 72a5593454bb89c5d0301362a6586dd21d486ef86b87a02d76a12c94e101a8afacde2d66c1dbcf8ed12f5899d50b38b2e8670163c1b80538b9fd4835597ff89b
+"@tabler/icons@npm:2.40.0":
+  version: 2.40.0
+  resolution: "@tabler/icons@npm:2.40.0"
+  checksum: 0ac93afcb3499a8bc1a9bd8a545ef8f49b07cf9b653279ce1121773f0b04380300aa0b700d4a223da883628cfd4ee0939574dd663c15b8358f43c519b8a621c4
   languageName: node
   linkType: hard
 
@@ -475,12 +475,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.8.7":
-  version: 20.8.7
-  resolution: "@types/node@npm:20.8.7"
+"@types/node@npm:20.8.9":
+  version: 20.8.9
+  resolution: "@types/node@npm:20.8.9"
   dependencies:
-    undici-types: ~5.25.1
-  checksum: 2173c0c03daefcb60c03a61b1371b28c8fe412e7a40dc6646458b809d14a85fbc7aeb369d957d57f0aaaafd99964e77436f29b3b579232d8f2b20c58abbd1d25
+    undici-types: ~5.26.4
+  checksum: 0c05f3502a9507ff27e91dd6fd574fa6f391b3fafedcfe8e0c8d33351fb22d02c0121f854e5b6b3ecb9a8a468407ddf6e7ac0029fb236d4c7e1361ffc758a01f
   languageName: node
   linkType: hard
 
@@ -507,7 +507,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:18.2.31":
+"@types/react@npm:*":
   version: 18.2.31
   resolution: "@types/react@npm:18.2.31"
   dependencies:
@@ -515,6 +515,17 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: b11be8e39174d3303e308461400889e353e422d22b01d09795b2c35b7b99d5351716503d9ec5c58e4c2c871249603fa52840d45a34fb5901dd7a26e06129c716
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:18.2.33":
+  version: 18.2.33
+  resolution: "@types/react@npm:18.2.33"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: 75903c4d53898c69dd23d0b2730eac4676dc5ade15c25c793dec855f0d7c650cb823832bb1dd881efe8895724f15b06d4bf7081ea0b82391aa3059512ad49ccf
   languageName: node
   linkType: hard
 
@@ -2068,15 +2079,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-mahir@npm:^0.0.34":
-  version: 0.0.34
-  resolution: "eslint-config-mahir@npm:0.0.34"
+"eslint-config-mahir@npm:^0.0.35":
+  version: 0.0.35
+  resolution: "eslint-config-mahir@npm:0.0.35"
   dependencies:
-    "@next/eslint-plugin-next": ^13.5.5
+    "@next/eslint-plugin-next": ^13.5.6
     "@rushstack/eslint-patch": ^1.5.1
     "@typescript-eslint/eslint-plugin": ^6.8.0
     "@typescript-eslint/parser": ^6.8.0
-    eslint: ^8.51.0
+    eslint: ^8.52.0
     eslint-config-prettier: ^9.0.0
     eslint-plugin-import: "npm:eslint-plugin-i@latest"
     eslint-plugin-jsdoc: ^46.8.2
@@ -2090,7 +2101,7 @@ __metadata:
     eslint-plugin-unicorn: ^48.0.1
     prettier: ^3.0.3
     typescript: ^5.2.2
-  checksum: c5c9c89bb19d39ed82d7fef85f6fd758c3e50a68c9a7985523e720045bc0e25ba2edf50dd0d03f080001b5ec0d44c84364415e16c213367952b51c16d9302e42
+  checksum: 28733d29f233dd7f4a5078b1ca0eab8cec18e8e591c1c787d9cb079c760270065c4180f676079c3d611b99d8920d11fa9edaaeab4fe3548176e12fd2f07655e5
   languageName: node
   linkType: hard
 
@@ -2350,7 +2361,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:8.52.0, eslint@npm:^8.51.0":
+"eslint@npm:8.52.0, eslint@npm:^8.52.0":
   version: 8.52.0
   resolution: "eslint@npm:8.52.0"
   dependencies:
@@ -4235,9 +4246,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "parbez@workspace:."
   dependencies:
-    "@tabler/icons-react": ^2.39.0
-    "@types/node": 20.8.7
-    "@types/react": 18.2.31
+    "@tabler/icons-react": ^2.40.0
+    "@types/node": 20.8.9
+    "@types/react": 18.2.33
     "@types/react-dom": 18.2.14
     "@unocss/cli": ^0.57.1
     "@unocss/eslint-config": ^0.57.1
@@ -4245,7 +4256,7 @@ __metadata:
     "@vercel/analytics": ^1.1.1
     concurrently: ^8.2.2
     eslint: 8.52.0
-    eslint-config-mahir: ^0.0.34
+    eslint-config-mahir: ^0.0.35
     next: 13.5.6
     prettier: ^3.0.3
     react: 18.2.0
@@ -5475,10 +5486,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici-types@npm:~5.25.1":
-  version: 5.25.3
-  resolution: "undici-types@npm:5.25.3"
-  checksum: ec9d2cc36520cbd9fbe3b3b6c682a87fe5be214699e1f57d1e3d9a2cb5be422e62735f06e0067dc325fd3dd7404c697e4d479f9147dc8a804e049e29f357f2ff
+"undici-types@npm:~5.26.4":
+  version: 5.26.5
+  resolution: "undici-types@npm:5.26.5"
+  checksum: 3192ef6f3fd5df652f2dc1cd782b49d6ff14dc98e5dced492aa8a8c65425227da5da6aafe22523c67f035a272c599bb89cfe803c1db6311e44bed3042fc25487
   languageName: node
   linkType: hard
 
