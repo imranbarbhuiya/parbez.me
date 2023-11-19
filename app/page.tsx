@@ -57,14 +57,14 @@ export default function Page() {
 				<h2 className="text-8 underline">Currently working at</h2>
 				<div className="mt-5 w-250 flex items-center justify-between lt-lg:mx-auto lt-lg:w-3/4 lt-lg:flex-col lt-lg:justify-center lt-lg:gap-5">
 					<Card
-						description="A discord game bot with more than 10M users"
-						image="https://cdn.discordapp.com/avatars/853629533855809596/09c303d5b941e08f8c933d9f65a4bd5f.webp?size=256"
+						description="A discord game bot with more than 21M users"
+						image="https://cdn.discordapp.com/avatars/853629533855809596/8e6f8987e9fcaef6d916c632ac8c5d0a.png?size=256"
 						position="Full Stack Developer"
 						title="Sofi"
 						url="https://sofi.gg"
 					/>
 					<Card
-						description="A multipurpose discord bot with more than 3.5M users"
+						description="A multipurpose discord bot with more than 6M users"
 						image="https://cdn.discordapp.com/avatars/903690362114158632/7a445665ba9718d0df60d317067c4b0e.webp?size=256"
 						position="Owner"
 						title="Roti"
