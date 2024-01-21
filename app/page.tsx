@@ -58,10 +58,17 @@ export default function Page() {
 				<div className="mt-5 w-250 flex items-center justify-between lt-lg:mx-auto lt-lg:w-3/4 lt-lg:flex-col lt-lg:justify-center lt-lg:gap-5">
 					<Card
 						description="A discord game bot with more than 21M users"
-						image="https://cdn.discordapp.com/avatars/853629533855809596/8e6f8987e9fcaef6d916c632ac8c5d0a.png?size=256"
+						image="https://sofi.gg/logo/mascot-logo/Violet.png"
 						position="Full Stack Developer"
 						title="Sofi"
 						url="https://sofi.gg"
+					/>
+					<Card
+						description="A stealth startup, more info will be revealed soon"
+						image="https://xofi.gg/logo.png"
+						position="CTO"
+						title="Xofi"
+						url="https://xofi.gg"
 					/>
 					<Card
 						description="A multipurpose discord bot with more than 6M users"
