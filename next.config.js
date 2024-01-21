@@ -3,6 +3,10 @@
 export default {
 	reactStrictMode: true,
 	images: {
-		domains: ['cdn.discordapp.com', 'sofi.gg', 'xofi.gg'],
+		remotePatterns: [
+			{ protocol: 'https', hostname: 'cdn.discordapp.com' },
+			{ protocol: 'https', hostname: 'sofi.gg' },
+			{ protocol: 'https', hostname: 'xofi.gg' },
+		]
 	},
 };
