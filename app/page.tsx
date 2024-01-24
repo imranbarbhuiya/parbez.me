@@ -65,7 +65,7 @@ export default function Page() {
 					/>
 					<Card
 						description="A stealth startup, more info will be revealed soon"
-						image="https://xofi.gg/logo.png"
+						image="https://xofi.gg/logo-light.png"
 						position="CTO"
 						title="Xofi"
 						url="https://xofi.gg"

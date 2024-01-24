@@ -17,7 +17,7 @@ export const Card = ({
 }) => {
 	return (
 		<div className="gradient-border w-70 flex flex-col items-center justify-center gap-5 rounded-lg bg-dark-400 p-5">
-			<Image alt={title} className="h-40 w-40 rounded-full" height={160} src={image} width={160} />
+			<Image alt={title} className="h-40 w-40 rounded-full object-contain" height={160} src={image} width={160} />
 			<div className="flex flex-col items-center justify-center">
 				<h1 className="text-2xl font-bold">{title}</h1>
 				<h2 className="text-base">{position}</h2>
