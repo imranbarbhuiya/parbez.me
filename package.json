@@ -12,7 +12,7 @@
 		"format": "prettier --write --cache ."
 	},
 	"dependencies": {
-		"@tabler/icons-react": "^2.46.0",
+		"@tabler/icons-react": "^2.47.0",
 		"@unocss/reset": "^0.58.4",
 		"@vercel/analytics": "^1.1.2",
 		"next": "14.1.0",
@@ -21,17 +21,17 @@
 		"sharp": "^0.33.2"
 	},
 	"devDependencies": {
-		"@types/node": "20.11.8",
-		"@types/react": "18.2.48",
+		"@types/node": "20.11.16",
+		"@types/react": "18.2.52",
 		"@types/react-dom": "18.2.18",
 		"@unocss/cli": "^0.58.4",
 		"@unocss/eslint-config": "^0.58.4",
 		"concurrently": "^8.2.2",
 		"eslint": "8.56.0",
-		"eslint-config-mahir": "^0.0.36",
+		"eslint-config-mahir": "^0.0.37",
 		"prettier": "^3.2.4",
 		"typescript": "5.3.3",
 		"unocss": "^0.58.4"
 	},
-	"packageManager": "yarn@4.0.2"
+	"packageManager": "yarn@4.1.0"
 }
