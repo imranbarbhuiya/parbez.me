@@ -13,7 +13,7 @@
 	},
 	"dependencies": {
 		"@tabler/icons-react": "^3.1.0",
-		"@unocss/reset": "^0.58.6",
+		"@unocss/reset": "^0.58.8",
 		"@vercel/analytics": "^1.2.2",
 		"next": "14.1.4",
 		"react": "18.2.0",
@@ -24,14 +24,14 @@
 		"@types/node": "20.11.30",
 		"@types/react": "18.2.69",
 		"@types/react-dom": "18.2.22",
-		"@unocss/cli": "^0.58.6",
-		"@unocss/eslint-config": "^0.58.6",
+		"@unocss/cli": "^0.58.8",
+		"@unocss/eslint-config": "^0.58.8",
 		"concurrently": "^8.2.2",
 		"eslint": "8.57.0",
 		"eslint-config-mahir": "^0.0.43",
 		"prettier": "^3.2.5",
 		"typescript": "5.4.3",
-		"unocss": "^0.58.6"
+		"unocss": "^0.58.8"
 	},
 	"packageManager": "yarn@4.1.1"
 }
