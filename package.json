@@ -12,25 +12,25 @@
 		"format": "prettier --write --cache ."
 	},
 	"dependencies": {
-		"@tabler/icons-react": "^3.1.0",
+		"@tabler/icons-react": "^3.2.0",
 		"@unocss/reset": "^0.59.2",
 		"@vercel/analytics": "^1.2.2",
-		"next": "14.1.4",
+		"next": "14.2.1",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"sharp": "^0.33.3"
 	},
 	"devDependencies": {
-		"@types/node": "20.12.5",
-		"@types/react": "18.2.74",
-		"@types/react-dom": "18.2.24",
+		"@types/node": "20.12.7",
+		"@types/react": "18.2.78",
+		"@types/react-dom": "18.2.25",
 		"@unocss/cli": "^0.59.2",
 		"@unocss/eslint-config": "^0.59.2",
 		"concurrently": "^8.2.2",
 		"eslint": "8.57.0",
 		"eslint-config-mahir": "^0.0.43",
 		"prettier": "^3.2.5",
-		"typescript": "5.4.4",
+		"typescript": "5.4.5",
 		"unocss": "^0.59.2"
 	},
 	"packageManager": "yarn@4.1.1"
