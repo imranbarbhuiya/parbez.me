@@ -1118,21 +1118,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tabler/icons-react@npm:^3.2.0":
-  version: 3.2.0
-  resolution: "@tabler/icons-react@npm:3.2.0"
+"@tabler/icons-react@npm:^3.3.0":
+  version: 3.3.0
+  resolution: "@tabler/icons-react@npm:3.3.0"
   dependencies:
-    "@tabler/icons": "npm:3.2.0"
+    "@tabler/icons": "npm:3.3.0"
   peerDependencies:
     react: ">= 16"
-  checksum: 10/743349a5c7d8cff1d55a101147c2fedc19dc844d0ec9f3de367383382ee314c444166cf137aca0154a7eaf8bcb4f3398a89bda9eb72a04f8c3e6ceb8dc582492
+  checksum: 10/8e2a77ec8c1320eba23f8d972bd39adee28c74fe0e73192c8bd50acf1e458ee624b5502e383db515337fcdbd0139e5c59d3207799780edcab40a7bf2b193ac43
   languageName: node
   linkType: hard
 
-"@tabler/icons@npm:3.2.0":
-  version: 3.2.0
-  resolution: "@tabler/icons@npm:3.2.0"
-  checksum: 10/4fe4de5ad3cdb54d7c711523dc6e1fc43605bca3fcfc777277da1713184ed5f9034010435c09a5bf928d6774cd643297483394a183aead42eb8f8a6626b70bcc
+"@tabler/icons@npm:3.3.0":
+  version: 3.3.0
+  resolution: "@tabler/icons@npm:3.3.0"
+  checksum: 10/af5f69f3018136b1f5b8839332fe350ede4abb0bf302193ff807327f2047397c5ac0cc363a30bbda4ad75b298914f1651f473f79e06627c2716a53a7c8a5a00c
   languageName: node
   linkType: hard
 
@@ -1164,12 +1164,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.12.7":
-  version: 20.12.7
-  resolution: "@types/node@npm:20.12.7"
+"@types/node@npm:20.12.8":
+  version: 20.12.8
+  resolution: "@types/node@npm:20.12.8"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 10/b4a28a3b593a9bdca5650880b6a9acef46911d58cf7cfa57268f048e9a7157a7c3196421b96cea576850ddb732e3b54bc982c8eb5e1e5ef0635d4424c2fce801
+  checksum: 10/1feab4c8cb08588eea10811ed4d02485a5cde47fdf92e7b3193fc9f8ee39ea556f6e3124dc6d5378354466ed5f7e5fbe5e20f625908de40ea37560368a50f72c
   languageName: node
   linkType: hard
 
@@ -4974,8 +4974,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "parbez@workspace:."
   dependencies:
-    "@tabler/icons-react": "npm:^3.2.0"
-    "@types/node": "npm:20.12.7"
+    "@tabler/icons-react": "npm:^3.3.0"
+    "@types/node": "npm:20.12.8"
     "@types/react": "npm:18.3.1"
     "@types/react-dom": "npm:18.3.0"
     "@unocss/cli": "npm:^0.59.4"
