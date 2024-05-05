@@ -12,7 +12,7 @@
 		"format": "prettier --write --cache ."
 	},
 	"dependencies": {
-		"@tabler/icons-react": "^3.2.0",
+		"@tabler/icons-react": "^3.3.0",
 		"@unocss/reset": "^0.59.4",
 		"@vercel/analytics": "^1.2.2",
 		"next": "14.2.3",
@@ -21,7 +21,7 @@
 		"sharp": "^0.33.3"
 	},
 	"devDependencies": {
-		"@types/node": "20.12.7",
+		"@types/node": "20.12.8",
 		"@types/react": "18.3.1",
 		"@types/react-dom": "18.3.0",
 		"@unocss/cli": "^0.59.4",
@@ -33,5 +33,5 @@
 		"typescript": "5.4.5",
 		"unocss": "^0.59.4"
 	},
-	"packageManager": "yarn@4.1.1"
+	"packageManager": "yarn@4.2.1"
 }
