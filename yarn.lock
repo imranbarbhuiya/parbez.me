@@ -1164,21 +1164,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tabler/icons-react@npm:^3.4.0":
-  version: 3.4.0
-  resolution: "@tabler/icons-react@npm:3.4.0"
+"@tabler/icons-react@npm:^3.5.0":
+  version: 3.5.0
+  resolution: "@tabler/icons-react@npm:3.5.0"
   dependencies:
-    "@tabler/icons": "npm:3.4.0"
+    "@tabler/icons": "npm:3.5.0"
   peerDependencies:
     react: ">= 16"
-  checksum: 10/15c06ff958ebf7b6b23ba595ea6e7d20afe5cd6b33e646f15bbd827ef6204fce7e4725110c6a8629d1429d9b033a9ddac0834596f285a5e41aa2c96117150afa
+  checksum: 10/46e483f6dc9c0f872f83caf8ee3a8d76f70961360fd720bea2e376491c2c10eb2a65d22f929c060d93b8b9bf121ee564bba5d45bea726a41ab4cb01c26a97b77
   languageName: node
   linkType: hard
 
-"@tabler/icons@npm:3.4.0":
-  version: 3.4.0
-  resolution: "@tabler/icons@npm:3.4.0"
-  checksum: 10/1a72b5e500a5cc3b78dc68fe7d41ce6a7768981a586d781f07968600271f9199edd966be480bba755c114d84ff7521243394ee1255e6c4822105d1a72900ad40
+"@tabler/icons@npm:3.5.0":
+  version: 3.5.0
+  resolution: "@tabler/icons@npm:3.5.0"
+  checksum: 10/8afbe35ba48133381dbdf4ec5b039d649acad288643dac5c4831d1a7d228082ab9632dbb2566d244e9f1e38d39bd159ff02726b88a0860b9a21d1feda7d4cac5
   languageName: node
   linkType: hard
 
@@ -1246,13 +1246,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.3.2":
-  version: 18.3.2
-  resolution: "@types/react@npm:18.3.2"
+"@types/react@npm:18.3.3":
+  version: 18.3.3
+  resolution: "@types/react@npm:18.3.3"
   dependencies:
     "@types/prop-types": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 10/a85eed82c1009dc9d979281d9ea1f5322255003de3378390f35d897b4bdaf1d34ea748636c03e9e9b4b7cc97c2f4582993d2d60e40846226ad497d97c7d8565a
+  checksum: 10/68e203b7f1f91d6cf21f33fc7af9d6d228035a26c83f514981e54aa3da695d0ec6af10c277c6336de1dd76c4adbe9563f3a21f80c4462000f41e5f370b46e96c
   languageName: node
   linkType: hard
 
@@ -1826,9 +1826,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/analytics@npm:^1.2.2":
-  version: 1.2.2
-  resolution: "@vercel/analytics@npm:1.2.2"
+"@vercel/analytics@npm:^1.3.1":
+  version: 1.3.1
+  resolution: "@vercel/analytics@npm:1.3.1"
   dependencies:
     server-only: "npm:^0.0.1"
   peerDependencies:
@@ -1839,7 +1839,7 @@ __metadata:
       optional: true
     react:
       optional: true
-  checksum: 10/18b9e006249e1df214c65e4fdb0672522edf4f690b57e460e714b2119faf0f872ddecc92f543797533cb26b9a09308821e30554b2329b17f46eff769a5f9f855
+  checksum: 10/81a3bfc49ed5ef0114e53d5eaabef1f50c816053323eeb9ad597363756b2473da2474ff7efc09aac7c4d36f9676b1a250bfa4858983ff88c3b2088cb48075cfd
   languageName: node
   linkType: hard
 
@@ -5003,14 +5003,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "parbez@workspace:."
   dependencies:
-    "@tabler/icons-react": "npm:^3.4.0"
+    "@tabler/icons-react": "npm:^3.5.0"
     "@types/node": "npm:20.12.12"
-    "@types/react": "npm:18.3.2"
+    "@types/react": "npm:18.3.3"
     "@types/react-dom": "npm:18.3.0"
     "@unocss/cli": "npm:^0.60.3"
     "@unocss/eslint-config": "npm:^0.60.3"
     "@unocss/reset": "npm:^0.60.3"
-    "@vercel/analytics": "npm:^1.2.2"
+    "@vercel/analytics": "npm:^1.3.1"
     concurrently: "npm:^8.2.2"
     eslint: "npm:8.57.0"
     eslint-config-mahir: "npm:^0.0.43"
