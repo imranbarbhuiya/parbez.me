@@ -21,7 +21,7 @@
 		"sharp": "^0.33.4"
 	},
 	"devDependencies": {
-		"@types/node": "20.12.12",
+		"@types/node": "20.13.0",
 		"@types/react": "18.3.3",
 		"@types/react-dom": "18.3.0",
 		"@unocss/cli": "^0.60.4",
@@ -29,7 +29,7 @@
 		"concurrently": "^8.2.2",
 		"eslint": "8.57.0",
 		"eslint-config-mahir": "^0.0.43",
-		"prettier": "^3.2.5",
+		"prettier": "^3.3.0",
 		"typescript": "5.4.5",
 		"unocss": "^0.60.4"
 	},
