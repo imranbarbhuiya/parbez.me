@@ -21,17 +21,17 @@
 		"sharp": "^0.33.4"
 	},
 	"devDependencies": {
-		"@types/node": "20.14.12",
+		"@types/node": "20.14.14",
 		"@types/react": "18.3.3",
 		"@types/react-dom": "18.3.0",
 		"@unocss/cli": "^0.61.6",
 		"@unocss/eslint-config": "^0.61.6",
 		"concurrently": "^8.2.2",
 		"eslint": "8.57.0",
-		"eslint-config-mahir": "^0.0.43",
+		"eslint-config-mahir": "^0.0.45",
 		"prettier": "^3.3.3",
 		"typescript": "5.5.4",
 		"unocss": "^0.61.6"
 	},
-	"packageManager": "yarn@4.3.1"
+	"packageManager": "yarn@4.4.0"
 }
