@@ -1,0 +1,36 @@
+{
+	"name": "parbez",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "TIMING=1 next lint --fix",
+		"format": "prettier --write --cache ."
+	},
+	"dependencies": {
+		"@vercel/analytics": "^1.3.1",
+		"framer-motion": "^11.3.29",
+		"lucide-react": "^0.429.0",
+		"next": "14.2.6",
+		"react": "18.3.1",
+		"react-dom": "18.3.1",
+		"sharp": "^0.33.5",
+		"tailwindcss-animate": "^1.0.7"
+	},
+	"devDependencies": {
+		"@types/node": "20.16.1",
+		"@types/react": "18.3.4",
+		"@types/react-dom": "18.3.0",
+		"eslint": "8.57.0",
+		"eslint-config-mahir": "^0.0.45",
+		"eslint-plugin-tailwindcss": "^3.17.4",
+		"postcss": "^8.4.40",
+		"prettier": "^3.3.3",
+		"tailwindcss": "^3.4.7",
+		"typescript": "5.5.4"
+	},
+	"packageManager": "yarn@4.4.0"
+}

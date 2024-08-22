@@ -1,0 +1,19 @@
+{
+	"editor.codeActionsOnSave": {
+		"source.fixAll": "always",
+		"source.organizeImports": "never"
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"files.eol": "\n",
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+	"typescript.tsdk": "./node_modules/typescript/lib",
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"tailwindCSS.experimental.classRegex": [
+		["clsx\\(([^)]*)\\)", "[\"'`]([^\"'`]*)[\"'`]"],
+		["cn\\(([^)]*)\\)", "[\"'`]([^\"'`]*)[\"'`]"],
+		":\\s*?[\"'`]([^\"'`]*).*?,"
+	]
+}
