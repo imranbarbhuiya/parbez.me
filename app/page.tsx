@@ -1,183 +1,151 @@
+/* eslint-disable react/no-unknown-property */
 'use client';
 
-import { motion } from 'framer-motion';
-import { Github, Linkedin, X, Globe, Server, Code, Smartphone, Database, Cpu } from 'lucide-react';
-import Image from 'next/image';
+import { OrbitControls, Sphere, MeshDistortMaterial, Points, PointMaterial, Text3D, Center } from '@react-three/drei';
+import { Canvas, useFrame, extend, useThree } from '@react-three/fiber';
+import React, { useRef, useMemo, useEffect } from 'react';
+import { type Mesh, type Group, type Object3DEventMap, type Points as ThreePoints } from 'three';
+import { FontLoader } from 'three/addons/loaders/FontLoader.js';
+import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js';
 
-import cat from './cat.png';
+extend({ TextGeometry });
 
-const MotionImage = motion(Image);
+function ParticleBackground() {
+	const ref = useRef<ThreePoints>(null);
+	const particleCount = 2_000;
+	const particles = useMemo(() => {
+		const temp = [];
+		for (let i = 0; i < particleCount; i++) {
+			const x = (Math.random() - 0.5) * 20;
+			const y = (Math.random() - 0.5) * 20;
+			// eslint-disable-next-line id-length
+			const z = (Math.random() - 0.5) * 20;
+			temp.push(x, y, z);
+		}
+		return new Float32Array(temp);
+	}, []);
 
-const Bubble = ({
-	size,
-	position,
-	delay,
-}: {
-	readonly delay: number;
-	readonly position: { bottom?: string; left?: string; right?: string; top?: string };
-	readonly size: number;
-}) => (
-	<motion.div
-		animate={{
-			y: [0, -20, 0],
-			x: [0, 10, 0],
-		}}
-		className="absolute rounded-full bg-gradient-to-br from-cyan-400 to-teal-400 opacity-40 blur-sm"
-		style={{
-			width: size,
-			height: size,
-			...position,
-		}}
-		transition={{
-			duration: 5,
-			repeat: Infinity,
-			repeatType: 'reverse',
-			delay,
-		}}
-		whileHover={{ scale: 1.2 }}
-	/>
-);
-
-export default function HomePage() {
-	const skills = [
-		{ name: 'Node.js', icon: <Server className="size-6" /> },
-		{ name: 'TypeScript', icon: <Code className="size-6" /> },
-		{ name: 'React', icon: <Globe className="size-6" /> },
-		{ name: 'Next.js', icon: <Globe className="size-6" /> },
-		{ name: 'React Native', icon: <Smartphone className="size-6" /> },
-		{ name: 'MongoDB', icon: <Database className="size-6" /> },
-		{ name: 'PostgreSQL', icon: <Database className="size-6" /> },
-		{ name: 'NestJs', icon: <Cpu className="size-6" /> },
-		{ name: 'Python', icon: <Code className="size-6" /> },
-		{ name: 'Go', icon: <Code className="size-6" /> },
-		{ name: 'Docker', icon: <Server className="size-6" /> },
-		{ name: 'Rust', icon: <Code className="size-6" /> },
-	];
-
-	const bubbles = [
-		{ size: 100, position: { top: '10%', left: '5%' }, delay: 0 },
-		{ size: 60, position: { top: '20%', right: '10%' }, delay: 1 },
-		{ size: 80, position: { bottom: '15%', left: '15%' }, delay: 2 },
-		{ size: 40, position: { bottom: '10%', right: '20%' }, delay: 3 },
-		{ size: 70, position: { top: '40%', left: '25%' }, delay: 4 },
-		{ size: 50, position: { top: '60%', right: '5%' }, delay: 5 },
-		{ size: 90, position: { top: '70%', left: '40%' }, delay: 2.5 },
-		{ size: 45, position: { top: '30%', right: '35%' }, delay: 3.5 },
-		{ size: 65, position: { bottom: '30%', right: '45%' }, delay: 4.5 },
-		{ size: 55, position: { top: '5%', left: '50%' }, delay: 1.5 },
-	];
+	useFrame((_state, delta) => {
+		if (!ref.current) return;
+		ref.current.rotation.x -= delta / 20;
+		ref.current.rotation.y -= delta / 25;
+		const positions = ref.current.geometry.attributes.position.array;
+		for (let i = 0; i < positions.length; i += 3) {
+			positions[i] += (Math.random() - 0.5) * 0.01;
+			positions[i + 1] += (Math.random() - 0.5) * 0.01;
+			positions[i + 2] += (Math.random() - 0.5) * 0.01;
+		}
+		ref.current.geometry.attributes.position.needsUpdate = true;
+	});
 
 	return (
-		<div className="relative flex min-h-screen flex-col justify-between overflow-hidden bg-black px-8 py-16 text-white">
-			{bubbles.map((bubble, index) => (
-				<Bubble key={index} {...bubble} />
-			))}
-			<div className="z-10 mx-auto w-full max-w-3xl">
-				<div className="mb-16 flex items-start justify-between">
-					<div>
-						<motion.h1
-							animate={{ opacity: 1, y: 0 }}
-							className="mb-4 text-5xl font-bold"
-							initial={{ opacity: 0, y: 20 }}
-							transition={{ delay: 0.2, duration: 0.8 }}
-						>
-							<span className="gradient-text">Imran Barbhuiya</span>
-						</motion.h1>
-						<motion.p
-							animate={{ opacity: 1, y: 0 }}
-							className="mb-8 text-xl text-gray-400"
-							initial={{ opacity: 0, y: 20 }}
-							transition={{ delay: 0.4, duration: 0.8 }}
-						>
-							Full stack web developer & App developer
-						</motion.p>
-						<motion.div
-							animate={{ opacity: 1, y: 0 }}
-							className="flex space-x-4"
-							initial={{ opacity: 0, y: 20 }}
-							transition={{ delay: 0.6, duration: 0.8 }}
-						>
-							<a
-								className="transition-colors hover:text-pink-400"
-								href="https://github.com/imranbarbhuiya"
-								target="_blank"
-							>
-								<Github size={24} />
-							</a>
-							<a
-								className="transition-colors hover:text-pink-400"
-								href="https://www.linkedin.com/in/imranbarbhuiya/"
-								target="_blank"
-							>
-								<Linkedin size={24} />
-							</a>
-							<a className="transition-colors hover:text-pink-400" href="https://x.com/notparbez" target="_blank">
-								<X size={24} />
-							</a>
-						</motion.div>
-					</div>
-					<motion.div transition={{ type: 'spring', stiffness: 300, damping: 10 }} whileHover={{ scale: 1.1 }}>
-						<MotionImage
-							alt="SukuMeow"
-							animate={{ opacity: 1, scale: 1 }}
-							className="size-24 rounded-full border-2 border-white shadow-lg"
-							initial={{ opacity: 0, scale: 0.8 }}
-							src={cat}
-							transition={{ delay: 0.2, duration: 0.8 }}
-							whileHover={{
-								borderColor: ['#fff', '#EC4899', '#F97316', '#fff'],
-								transition: { duration: 2, repeat: Infinity },
-							}}
-						/>
-					</motion.div>
-				</div>
-				<motion.div
-					animate={{ opacity: 1, y: 0 }}
-					className="mb-16"
-					initial={{ opacity: 0, y: 20 }}
-					transition={{ delay: 0.8, duration: 0.8 }}
-				>
-					<h2 className="mb-4 text-2xl font-semibold">About Me</h2>
-					<p className="leading-relaxed text-gray-300">
-						I'm a passionate Full Stack Developer with a strong drive for innovation and continuous learning. I enjoy
-						building and exploring new technologies, contributing to open-source projects, and connecting with others in
-						the tech community. My experience spans a wide range of programming languages, including{' '}
-						<span className="text-cyan-400">Rust, TypeScript, JavaScript, Python, C, C++, PHP, Dart, and Flutter</span>,
-						as well as frameworks and libraries such as{' '}
-						<span className="text-teal-300">React, Next.js, Remix, Svelte, React Native, Tauri, and Nest.js</span>. As a
-						self-taught developer, I'm a quick learner who thrives on tackling new challenges and expanding my
-						expertise.
-					</p>
-				</motion.div>
-				<motion.div
-					animate={{ opacity: 1, y: 0 }}
-					initial={{ opacity: 0, y: 20 }}
-					transition={{ delay: 1, duration: 0.8 }}
-				>
-					<h2 className="mb-4 text-2xl font-semibold">Skills</h2>
-					<div className="grid grid-cols-2 gap-4 md:grid-cols-3">
-						{skills.map((skill, index) => (
-							<motion.div
-								animate={{ opacity: 1, scale: 1 }}
-								className="flex cursor-pointer items-center space-x-3 rounded-lg bg-gray-800 p-4"
-								initial={{ opacity: 0, scale: 0.8 }}
-								key={skill.name}
-								transition={{ delay: index * 0.1 + 1.2, duration: 0.5 }}
-								whileHover={{
-									scale: 1.05,
-									rotate: [0, 5, -5, 0],
-									transition: { duration: 0.3 },
-								}}
-							>
-								<motion.div transition={{ duration: 0.3 }} whileHover={{ rotate: 360 }}>
-									{skill.icon}
-								</motion.div>
-								<span>{skill.name}</span>
-							</motion.div>
-						))}
-					</div>
-				</motion.div>
-			</div>
+		<group rotation={[0, 0, Math.PI / 4]}>
+			<Points frustumCulled={false} positions={particles} ref={ref} stride={3}>
+				<PointMaterial color="#fff" depthWrite={false} size={0.02} sizeAttenuation transparent />
+			</Points>
+		</group>
+	);
+}
+
+function AnimatedSphere() {
+	const mesh = useRef<Mesh>(null);
+	useFrame((_state, delta) => {
+		if (!mesh.current) return;
+		mesh.current.rotation.x += delta * 0.25;
+		mesh.current.rotation.y += delta * 0.25;
+	});
+
+	return (
+		<Sphere args={[1, 100, 200]} ref={mesh} scale={2.5} visible>
+			<MeshDistortMaterial
+				attach="material"
+				color="#8352FD"
+				distort={0.3}
+				opacity={0.8}
+				roughness={0}
+				speed={1.5}
+				transparent
+			/>
+		</Sphere>
+	);
+}
+
+function Title() {
+	const mesh = useRef<Mesh>(null);
+	useFrame((state) => {
+		if (mesh.current) mesh.current.rotation.y = Math.sin(state.clock.elapsedTime) * 0.2;
+	});
+
+	return (
+		<group position={[0, 0.5, 0]}>
+			<Center>
+				<Text3D curveSegments={12} font="/fonts/helvetiker_regular.typeface.json" height={0.1} ref={mesh} size={0.5}>
+					Imran Barbhuiya
+					<meshStandardMaterial color="#ffffff" />
+				</Text3D>
+			</Center>
+		</group>
+	);
+}
+
+function SocialIcon({
+	position,
+	scale,
+	url,
+	children,
+}: {
+	readonly children: React.ReactNode;
+	readonly position: [number, number, number];
+	readonly scale: number;
+	readonly url: string;
+}) {
+	const mesh = useRef<Group<Object3DEventMap>>(null);
+	const { camera } = useThree();
+
+	useFrame(() => {
+		mesh.current?.quaternion.copy(camera.quaternion);
+	});
+
+	return (
+		<group position={position} ref={mesh} scale={scale}>
+			<mesh onClick={() => window.open(url, '_blank')}>
+				{children}
+				<meshStandardMaterial color="#ffffff" />
+			</mesh>
+		</group>
+	);
+}
+
+export default function HeroSection() {
+	useEffect(() => {
+		const loader = new FontLoader();
+
+		loader.load('/fonts/helvetiker_regular.typeface.json');
+	}, []);
+	return (
+		<div className="relative h-screen w-full">
+			<Canvas className="absolute inset-0">
+				<color args={['#000000']} attach="background" />
+				<ambientLight intensity={0.5} />
+				<spotLight angle={0.15} penumbra={1} position={[10, 10, 10]} />
+				<pointLight position={[-10, -10, -10]} />
+				<ParticleBackground />
+				<group position={[0, 0, -1]}>
+					<AnimatedSphere />
+					<Title />
+					<SocialIcon position={[-1, -0.8, 0]} scale={0.3} url="https://github.com/imranbarbhuiya">
+						<Text3D curveSegments={12} font="/fonts/helvetiker_regular.typeface.json" height={0.2} size={1}>
+							GH
+						</Text3D>
+					</SocialIcon>
+					<SocialIcon position={[1, -0.8, 0]} scale={0.3} url="https://twitter.com/notparbez">
+						<Text3D curveSegments={12} font="/fonts/helvetiker_regular.typeface.json" height={0.2} size={1}>
+							X
+						</Text3D>
+					</SocialIcon>
+				</group>
+				<OrbitControls enableZoom={false} />
+			</Canvas>
 		</div>
 	);
 }
