@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }: { readonly children: React.ReactNode }) {
 	return (
 		<html lang="en">
-			<body>
+			<body className="bg-black">
 				{children}
 				<Analytics />
 			</body>
