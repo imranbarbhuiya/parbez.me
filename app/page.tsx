@@ -2,7 +2,7 @@
 'use client';
 
 import { OrbitControls, Sphere, MeshDistortMaterial, Points, PointMaterial, Text3D, Center } from '@react-three/drei';
-import { Canvas, useFrame, extend, useThree } from '@react-three/fiber';
+import { Canvas, useFrame, extend } from '@react-three/fiber';
 import React, { useRef, useMemo, useEffect } from 'react';
 import { type Mesh, type Group, type Object3DEventMap, type Points as ThreePoints } from 'three';
 import { FontLoader } from 'three/addons/loaders/FontLoader.js';
@@ -100,10 +100,8 @@ function SocialIcon({
 	readonly url: string;
 }) {
 	const mesh = useRef<Group<Object3DEventMap>>(null);
-	const { camera } = useThree();
-
-	useFrame(() => {
-		mesh.current?.quaternion.copy(camera.quaternion);
+	useFrame((state) => {
+		if (mesh.current) mesh.current.rotation.y = Math.sin(state.clock.elapsedTime) * 0.2;
 	});
 
 	return (
@@ -135,10 +133,10 @@ export default function HeroSection() {
 					<Title />
 					<SocialIcon position={[-1, -0.8, 0]} scale={0.3} url="https://github.com/imranbarbhuiya">
 						<Text3D curveSegments={12} font="/fonts/helvetiker_regular.typeface.json" height={0.2} size={1}>
-							GH
+							Github
 						</Text3D>
 					</SocialIcon>
-					<SocialIcon position={[1, -0.8, 0]} scale={0.3} url="https://twitter.com/notparbez">
+					<SocialIcon position={[1, -0.8, 0]} scale={0.3} url="https://x.com/notparbez">
 						<Text3D curveSegments={12} font="/fonts/helvetiker_regular.typeface.json" height={0.2} size={1}>
 							X
 						</Text3D>
