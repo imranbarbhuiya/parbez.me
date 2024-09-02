@@ -621,9 +621,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/drei@npm:^9.111.4":
-  version: 9.111.4
-  resolution: "@react-three/drei@npm:9.111.4"
+"@react-three/drei@npm:^9.111.5":
+  version: 9.111.5
+  resolution: "@react-three/drei@npm:9.111.5"
   dependencies:
     "@babel/runtime": "npm:^7.11.2"
     "@mediapipe/tasks-vision": "npm:0.10.8"
@@ -656,7 +656,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 10/05bb1cec5d40b307c5687fdeb90b5b1594c9fd0b843c888d13d403faad4912f04df82d9c5843acece3cc4253a74d35372ddbc2c4ddbc1b5370145678613556a6
+  checksum: 10/d83f5a144a14df76016136c2283245d58f54b2413d84e1529a24c0b20cfa5164e1cf8cb5a074852335567c497ca15c5712fa6602bf2f97404ea427f806524e76
   languageName: node
   linkType: hard
 
@@ -726,7 +726,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tweenjs/tween.js@npm:~23.1.1, @tweenjs/tween.js@npm:~23.1.2":
+"@tweenjs/tween.js@npm:~23.1.1, @tweenjs/tween.js@npm:~23.1.3":
   version: 23.1.3
   resolution: "@tweenjs/tween.js@npm:23.1.3"
   checksum: 10/10ecaf311c975162459bd016ef7eb1f3118a257050c4886de9737dee823fc829100a0887f3fc298f7a5577140eac054f9609b823eb0748ca7b653ec85ffba75e
@@ -754,12 +754,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.16.2":
-  version: 20.16.2
-  resolution: "@types/node@npm:20.16.2"
+"@types/node@npm:20.16.3":
+  version: 20.16.3
+  resolution: "@types/node@npm:20.16.3"
   dependencies:
     undici-types: "npm:~6.19.2"
-  checksum: 10/fcae2ffaa681c2947cd3dae67a6dcf83ef666fc0994281ad881b9e3bb542fec3a9206d9ce899c20e5cdddace2b96b42e32f247864de9baf95756c07b9eff15d7
+  checksum: 10/3b14b8b3cb92adc7db69f8cf351e7b6b5001e5c7cdb07470943215afeafc2952ae588c918543784e8f8e975d43d609ce0c7bced91f1b8745f1669d6137adaabc
   languageName: node
   linkType: hard
 
@@ -811,13 +811,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:18.3.4":
+"@types/react@npm:*":
   version: 18.3.4
   resolution: "@types/react@npm:18.3.4"
   dependencies:
     "@types/prop-types": "npm:*"
     csstype: "npm:^3.0.2"
   checksum: 10/359973924be42cf9e7366e1d885b28e0b3bd56d31f24458c5351af7a3f2fc070511e90d517b2195fb229146cdcb70342db6318e279c31dd5057beec1105b704e
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:18.3.5":
+  version: 18.3.5
+  resolution: "@types/react@npm:18.3.5"
+  dependencies:
+    "@types/prop-types": "npm:*"
+    csstype: "npm:^3.0.2"
+  checksum: 10/ba0477c5ad4a762157c6262a199af6ccf9e24576877a26a7f516d5a9ba35374a6ac7f8686a10e5e8030513214f02bcb66e8363e43905afb7cd313deaf673de05
   languageName: node
   linkType: hard
 
@@ -841,16 +851,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/three@npm:^0.167.2":
-  version: 0.167.2
-  resolution: "@types/three@npm:0.167.2"
+"@types/three@npm:^0.168.0":
+  version: 0.168.0
+  resolution: "@types/three@npm:0.168.0"
   dependencies:
-    "@tweenjs/tween.js": "npm:~23.1.2"
+    "@tweenjs/tween.js": "npm:~23.1.3"
     "@types/stats.js": "npm:*"
     "@types/webxr": "npm:*"
+    "@webgpu/types": "npm:*"
     fflate: "npm:~0.8.2"
     meshoptimizer: "npm:~0.18.1"
-  checksum: 10/0e316af5ca2b988bbe03d8d8489569a61ce81e1a93426b193cfb9252175b77b70a547005c3b4bedb8007bd84d56b6b5e64d36c95513622130f126e144e7af3d9
+  checksum: 10/05ea8236196143501b6002f0934b41a4f48f022cbbc28abb3d8defa32f5e0912d4153a62b8a8f7133addcc36a55b65c9f70596d1602f90ee4c0259ae57280509
   languageName: node
   linkType: hard
 
@@ -1089,6 +1100,13 @@ __metadata:
     react:
       optional: true
   checksum: 10/81a3bfc49ed5ef0114e53d5eaabef1f50c816053323eeb9ad597363756b2473da2474ff7efc09aac7c4d36f9676b1a250bfa4858983ff88c3b2088cb48075cfd
+  languageName: node
+  linkType: hard
+
+"@webgpu/types@npm:*":
+  version: 0.1.44
+  resolution: "@webgpu/types@npm:0.1.44"
+  checksum: 10/28f7e07bd1fb6371527411e63d9673bf646c6ddcff70be79c74001fb5a96f65e971a1fbac57e358c7ecce877577480e2ed718d6b24b47ca721304a0488e4431a
   languageName: node
   linkType: hard
 
@@ -3670,12 +3688,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:^0.436.0":
-  version: 0.436.0
-  resolution: "lucide-react@npm:0.436.0"
+"lucide-react@npm:^0.438.0":
+  version: 0.438.0
+  resolution: "lucide-react@npm:0.438.0"
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc
-  checksum: 10/33ece64ea067a02d9d4eaf4b18f9334323db3e0b91746c5332c29b0aa2afd44858db9b48300a78a3406adcd99ffc15c14f94345b7a18a02070216741710c5751
+  checksum: 10/4c163b8f00c1a7af5993163d4da1b2ebb41c99ddd7408df8211b7751090c106992aca994e5bc92d9214432b6d1abb99425c0347e79127f47c74ea392ff92693c
   languageName: node
   linkType: hard
 
@@ -4209,27 +4227,27 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "parbez@workspace:."
   dependencies:
-    "@react-three/drei": "npm:^9.111.4"
+    "@react-three/drei": "npm:^9.111.5"
     "@react-three/fiber": "npm:^8.17.6"
-    "@types/node": "npm:20.16.2"
-    "@types/react": "npm:18.3.4"
+    "@types/node": "npm:20.16.3"
+    "@types/react": "npm:18.3.5"
     "@types/react-dom": "npm:18.3.0"
-    "@types/three": "npm:^0.167.2"
+    "@types/three": "npm:^0.168.0"
     "@vercel/analytics": "npm:^1.3.1"
     eslint: "npm:8.57.0"
     eslint-config-mahir: "npm:^0.0.45"
     eslint-plugin-tailwindcss: "npm:^3.17.4"
     framer-motion: "npm:^11.3.31"
-    lucide-react: "npm:^0.436.0"
+    lucide-react: "npm:^0.438.0"
     next: "npm:14.2.7"
-    postcss: "npm:^8.4.41"
+    postcss: "npm:^8.4.44"
     prettier: "npm:^3.3.3"
     react: "npm:18.3.1"
     react-dom: "npm:18.3.1"
     sharp: "npm:^0.33.5"
     tailwindcss: "npm:^3.4.10"
     tailwindcss-animate: "npm:^1.0.7"
-    three: "npm:^0.167.1"
+    three: "npm:^0.168.0"
     typescript: "npm:5.5.4"
   languageName: unknown
   linkType: soft
@@ -4433,7 +4451,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.23, postcss@npm:^8.4.4, postcss@npm:^8.4.41":
+"postcss@npm:^8.4.23, postcss@npm:^8.4.4":
   version: 8.4.41
   resolution: "postcss@npm:8.4.41"
   dependencies:
@@ -4441,6 +4459,17 @@ __metadata:
     picocolors: "npm:^1.0.1"
     source-map-js: "npm:^1.2.0"
   checksum: 10/6e6176c2407eff60493ca60a706c6b7def20a722c3adda94ea1ece38345eb99964191336fd62b62652279cec6938e79e0b1e1d477142c8d3516e7a725a74ee37
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.4.44":
+  version: 8.4.44
+  resolution: "postcss@npm:8.4.44"
+  dependencies:
+    nanoid: "npm:^3.3.7"
+    picocolors: "npm:^1.0.1"
+    source-map-js: "npm:^1.2.0"
+  checksum: 10/aac7ed383fdcde9def6ed814ee03bc3de68b345e3f9bea414df2daca08185b6cfb4044fe9f67e1d9e886f29642373b34fd4fde5976204ca66a5481859afdcb7d
   languageName: node
   linkType: hard
 
@@ -5436,10 +5465,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"three@npm:^0.167.1":
-  version: 0.167.1
-  resolution: "three@npm:0.167.1"
-  checksum: 10/48022352c7feaba61b217958919f93556030b832a90c47661c8c57874ce7120116ca157eec7993755d54881a6135c952435e842541bd6b0972cd66c3add203ad
+"three@npm:^0.168.0":
+  version: 0.168.0
+  resolution: "three@npm:0.168.0"
+  checksum: 10/36598e544701960b060c232b676e4535a0dafb16ca5c37b451e47d55637b907195285a6c2441e38279a7b1d2802885cc37c499cced8dbeb811c4fc3a74f4de43
   languageName: node
   linkType: hard
 
