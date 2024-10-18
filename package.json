@@ -28,7 +28,7 @@
 		"@types/react": "18.3.11",
 		"@types/react-dom": "18.3.1",
 		"@types/three": "^0.169.0",
-		"eslint": "8.57.1",
+		"eslint": "9.13.0",
 		"eslint-config-mahir": "^0.0.46",
 		"eslint-plugin-tailwindcss": "^3.17.5",
 		"postcss": "^8.4.47",
