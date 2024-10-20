@@ -2083,9 +2083,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/drei@npm:^9.114.3":
-  version: 9.114.3
-  resolution: "@react-three/drei@npm:9.114.3"
+"@react-three/drei@npm:^9.114.6":
+  version: 9.114.6
+  resolution: "@react-three/drei@npm:9.114.6"
   dependencies:
     "@babel/runtime": "npm:^7.11.2"
     "@mediapipe/tasks-vision": "npm:0.10.8"
@@ -2096,7 +2096,7 @@ __metadata:
     cross-env: "npm:^7.0.3"
     detect-gpu: "npm:^5.0.28"
     glsl-noise: "npm:^0.0.0"
-    hls.js: "npm:1.3.5"
+    hls.js: "npm:^1.5.17"
     maath: "npm:^0.10.7"
     meshline: "npm:^3.1.6"
     react-composer: "npm:^5.0.3"
@@ -2118,7 +2118,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 10/c5ce537a1f5f8b241766cc62d8fb0777a8d403d474cf7d999631e91e31b37a923d038d6a950b0d80a6086f3001a4181db650e3e20f25f947537afa3171025b30
+  checksum: 10/ae8451345d870faf263ba0f04081750d0598c9558a102614ff488a0e3247b5e443ed8739749a1c5c8ee07aa5dddb3b95c43314d04864c4a140683c1f725962ae
   languageName: node
   linkType: hard
 
@@ -2230,12 +2230,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.16.11":
-  version: 20.16.11
-  resolution: "@types/node@npm:20.16.11"
+"@types/node@npm:20.16.13":
+  version: 20.16.13
+  resolution: "@types/node@npm:20.16.13"
   dependencies:
     undici-types: "npm:~6.19.2"
-  checksum: 10/6d2f92b7b320c32ba0c2bc54d21651bd21690998a2e27f00d15019d4db3e0ec30fce85332efed5e37d4cda078ff93ea86ee3e92b76b7a25a9b92a52a039b60b2
+  checksum: 10/6e7b82119372cc12d28fcc1b0c10d1b8fa560bbb500f87a4c68bc446a0986d42c92e0f583040167841a0c598131979c3399b17c736c9fb8ba4f0dcf2b2048a84
   languageName: node
   linkType: hard
 
@@ -4975,10 +4975,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hls.js@npm:1.3.5":
-  version: 1.3.5
-  resolution: "hls.js@npm:1.3.5"
-  checksum: 10/cfd10231a2594ed0fe427dac6f0a19e20e483126e2455a2ab22f45d07d13cf0c1a12500bf2f6abe06dc2abffb486c6ec5811f2aca301473a9492c1eacd161a6d
+"hls.js@npm:^1.5.17":
+  version: 1.5.17
+  resolution: "hls.js@npm:1.5.17"
+  checksum: 10/8d6fa42a2c1a6ba66a8ccefda806d7a1aedcbe718224f3c7444fc80472c95a75cde439c8c16c6a65d43062347841fa68562e496d27dd74779fe68925d7d296a5
   languageName: node
   linkType: hard
 
@@ -6328,9 +6328,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "parbez@workspace:."
   dependencies:
-    "@react-three/drei": "npm:^9.114.3"
+    "@react-three/drei": "npm:^9.114.6"
     "@react-three/fiber": "npm:^8.17.10"
-    "@types/node": "npm:20.16.11"
+    "@types/node": "npm:20.16.13"
     "@types/react": "npm:18.3.11"
     "@types/react-dom": "npm:18.3.1"
     "@types/three": "npm:^0.169.0"
