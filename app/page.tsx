@@ -13,7 +13,7 @@ const techStack = [
 	{ title: 'Frontend', icon: Globe, skills: ['Next.js', 'React', 'Nuxt', 'Vue', 'Remix', 'Svelte'] },
 	{ title: 'Backend', icon: Server, skills: ['Node.js', 'NestJS', 'Express', 'Fastify', 'Rocket'] },
 	{ title: 'Mobile', icon: Smartphone, skills: ['React Native', 'Expo', 'Tauri', 'Flutter'] },
-	{ title: 'Languages', icon: Terminal, skills: ['TypeScript', 'Javascript', 'Rust', 'Go', 'Python'] },
+	{ title: 'Languages', icon: Terminal, skills: ['TypeScript', 'JavaScript', 'Rust', 'Go', 'Python'] },
 	{ title: 'Database', icon: Database, skills: ['PostgreSQL', 'MongoDB', 'DynamoDB'] },
 	{ title: 'Design', icon: Globe, skills: ['Figma', 'CSS3'] },
 ];
@@ -21,28 +21,28 @@ const techStack = [
 const projects = [
 	{
 		title: 'Spartans',
-		description: 'A mobile app for TEC spartans program',
+		description: 'A mobile app for the TEC Spartans program, helping spartans join campaigns easily.',
 		tech: ['React Native', 'Expo', 'Node.js', 'NestJS', 'Kotlin', 'Swift', 'C++'],
 		color: 'from-green-400 to-cyan-500',
 		link: 'https://www.spartans.theesports.club/',
 	},
 	{
 		title: 'Sofi',
-		description: 'An anime based game with more than 24m users reach',
+		description: 'A popular anime based card collecting game with a reach of over 24 million users worldwide.',
 		tech: ['TypeScript', 'Next.js', 'Node.js', 'PostgreSQL', 'MongoDB', 'Rust', 'NestJS', 'Stripe', 'Paypal'],
 		color: 'from-purple-500 to-pink-500',
 		link: 'https://sofi.gg/',
 	},
 	{
 		title: 'Xofi',
-		description: 'An E-commerce platform for anime merchandise',
+		description: 'An e-commerce site for anime merchandise with seamless user experience.',
 		tech: ['Rust', 'Next.js', 'NestJS', 'Redis', 'PostgreSQL', 'MongoDB', 'TypeScript', 'Docker', 'Nginx'],
 		color: 'from-orange-500 to-red-500',
 		link: 'https://xofi.gg/',
 	},
 	{
 		title: 'Quizx',
-		description: 'A mobile app for quiz lovers',
+		description: 'An engaging mobile app designed for quiz enthusiasts.',
 		tech: ['React Native', 'Expo', 'Node.js', 'NestJS', 'Kotlin', 'Swift', 'Python', 'TensorFlow', 'OpenAI', 'Rust'],
 		color: 'from-blue-500 to-cyan-500',
 		link: 'https://quizx.gg/',
@@ -50,16 +50,15 @@ const projects = [
 	{
 		title: 'Languages',
 		description:
-			'I wrote a programming language (Ran) in go and a template parser (Tagscript) and executer in typescript',
-		tech: ['Go', 'Typescript', 'Parser', 'Interpreter', 'Compiler', 'VM'],
+			'Created my own programming language (Ran) in Go and a template parser/executor (Tagscript) in TypeScript.',
+		tech: ['Go', 'TypeScript', 'Parser', 'Interpreter', 'Compiler', 'VM'],
 		color: 'from-yellow-500 to-red-500',
 		link: 'https://github.com/imranbarbhuiya/ran/',
 	},
 	{
 		title: 'Open Source Enthusiast',
-		description:
-			'Love creating/contributing to open source projects. My projects are used by Remix, Cloudflare and more',
-		tech: ['Next.js', 'Typescript', 'Go'],
+		description: 'Passionate about open source, my projects are used by Remix, Cloudflare, and others.',
+		tech: ['Next.js', 'TypeScript', 'Go', 'Expo', 'React Native', 'JavaScript', 'Rust'],
 		color: 'from-purple-500 to-blue-500',
 		link: 'https://github.com/imranbarbhuiya/',
 	},

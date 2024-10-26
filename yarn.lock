@@ -7137,7 +7137,6 @@ __metadata:
     prettier: "npm:^3.3.3"
     react: "npm:19.0.0-rc-69d4b800-20241021"
     react-dom: "npm:19.0.0-rc-69d4b800-20241021"
-    react-particles: "npm:^2.12.2"
     sharp: "npm:^0.33.5"
     tailwindcss: "npm:^3.4.14"
     tailwindcss-animate: "npm:^1.0.7"
@@ -7472,17 +7471,6 @@ __metadata:
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: 10/5aa564a1cde7d391ac980bedee21202fc90bdea3b399952117f54fb71a932af1e5902020144fb354b4690b2414a0c7aafe798eb617b76a3d441d956db7726fdf
-  languageName: node
-  linkType: hard
-
-"react-particles@npm:^2.12.2":
-  version: 2.12.2
-  resolution: "react-particles@npm:2.12.2"
-  dependencies:
-    tsparticles-engine: "npm:^2.12.0"
-  peerDependencies:
-    react: ">=16"
-  checksum: 10/e3a45230b6b21828003dbb669a9768d82ac9a480ba7b0702d7782c6c1ca286fef6390f094ecb7beaa69cb29badb5c12ee6ed2cc055c9727e269f02d772b738b6
   languageName: node
   linkType: hard
 
@@ -8568,13 +8556,6 @@ __metadata:
   version: 2.8.0
   resolution: "tslib@npm:2.8.0"
   checksum: 10/1bc7c43937477059b4d26f2dbde7e49ef0fb4f38f3014e0603eaea76d6a885742c8b1762af45949145e5e7408a736d20ded949da99dabc8ccba1fc5531d2d927
-  languageName: node
-  linkType: hard
-
-"tsparticles-engine@npm:^2.12.0":
-  version: 2.12.0
-  resolution: "tsparticles-engine@npm:2.12.0"
-  checksum: 10/c991f1cf7c249722d88fd5f512b36e52a8e77dc87001a074c890257d5e72caab2b1ba4ae2023f9dab6da619fe9401ea9b1326330475f0a4c0989187937b355e4
   languageName: node
   linkType: hard
 

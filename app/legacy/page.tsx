@@ -5,7 +5,7 @@ import { Github, Linkedin, X, Globe, Server, Code, Smartphone, Database, Cpu } f
 import Image from 'next/image';
 import Link from 'next/link';
 
-import cat from '../public/cat.png';
+import cat from '../../public/cat.png';
 
 const MotionImage = motion.create(Image);
 const MotionLink = motion.create(Link);
