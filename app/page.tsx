@@ -1,189 +1,765 @@
+/* eslint-disable id-length */
 'use client';
 
+import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, X, Globe, Server, Code, Smartphone, Database, Cpu } from 'lucide-react';
-import Image from 'next/image';
-import Link from 'next/link';
+import { Github, Linkedin, X, Terminal, Globe, Smartphone, Server, Database } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { loadFull } from 'tsparticles';
 
-import cat from '../public/cat.png';
+import type { ISourceOptions } from '@tsparticles/engine';
 
-const MotionImage = motion(Image);
-const MotionLink = motion(Link);
+const techStack = [
+	{ title: 'Frontend', icon: Globe, skills: ['Next.js', 'React', 'Nuxt', 'Vue', 'Remix', 'Svelte'] },
+	{ title: 'Backend', icon: Server, skills: ['Node.js', 'NestJS', 'Express', 'Fastify', 'Rocket'] },
+	{ title: 'Mobile', icon: Smartphone, skills: ['React Native', 'Expo', 'Tauri', 'Flutter'] },
+	{ title: 'Languages', icon: Terminal, skills: ['TypeScript', 'Javascript', 'Rust', 'Go', 'Python'] },
+	{ title: 'Database', icon: Database, skills: ['PostgreSQL', 'MongoDB', 'DynamoDB'] },
+	{ title: 'Design', icon: Globe, skills: ['Figma', 'CSS3'] },
+];
 
-const Bubble = ({
-	size,
-	position,
-	delay,
-}: {
-	readonly delay: number;
-	readonly position: { bottom?: string; left?: string; right?: string; top?: string };
-	readonly size: number;
-}) => (
-	<motion.div
-		animate={{
-			y: [0, -20, 0],
-			x: [0, 10, 0],
-		}}
-		className="absolute rounded-full bg-gradient-to-br from-cyan-400 to-teal-400 opacity-40 blur-sm"
-		style={{
-			width: size,
-			height: size,
-			...position,
-		}}
-		transition={{
-			duration: 5,
-			repeat: Infinity,
-			repeatType: 'reverse',
-			delay,
-		}}
-		whileHover={{ scale: 1.2 }}
-	/>
-);
+const projects = [
+	{
+		title: 'Spartans',
+		description: 'A mobile app for TEC spartans program',
+		tech: ['React Native', 'Expo', 'Node.js', 'NestJS', 'Kotlin', 'Swift', 'C++'],
+		color: 'from-green-400 to-cyan-500',
+		link: 'https://www.spartans.theesports.club/',
+	},
+	{
+		title: 'Sofi',
+		description: 'An anime based game with more than 24m users reach',
+		tech: ['TypeScript', 'Next.js', 'Node.js', 'PostgreSQL', 'MongoDB', 'Rust', 'NestJS', 'Stripe', 'Paypal'],
+		color: 'from-purple-500 to-pink-500',
+		link: 'https://sofi.gg/',
+	},
+	{
+		title: 'Xofi',
+		description: 'An E-commerce platform for anime merchandise',
+		tech: ['Rust', 'Next.js', 'NestJS', 'Redis', 'PostgreSQL', 'MongoDB', 'TypeScript', 'Docker', 'Nginx'],
+		color: 'from-orange-500 to-red-500',
+		link: 'https://xofi.gg/',
+	},
+	{
+		title: 'Quizx',
+		description: 'A mobile app for quiz lovers',
+		tech: ['React Native', 'Expo', 'Node.js', 'NestJS', 'Kotlin', 'Swift', 'Python', 'TensorFlow', 'OpenAI', 'Rust'],
+		color: 'from-blue-500 to-cyan-500',
+		link: 'https://quizx.gg/',
+	},
+	{
+		title: 'Languages',
+		description:
+			'I wrote a programming language (Ran) in go and a template parser (Tagscript) and executer in typescript',
+		tech: ['Go', 'Typescript', 'Parser', 'Interpreter', 'Compiler', 'VM'],
+		color: 'from-yellow-500 to-red-500',
+		link: 'https://github.com/imranbarbhuiya/ran/',
+	},
+	{
+		title: 'Open Source Enthusiast',
+		description:
+			'Love creating/contributing to open source projects. My projects are used by Remix, Cloudflare and more',
+		tech: ['Next.js', 'Typescript', 'Go'],
+		color: 'from-purple-500 to-blue-500',
+		link: 'https://github.com/imranbarbhuiya/',
+	},
+];
 
-export default function HomePage() {
-	const skills = [
-		{ name: 'Node.js', icon: <Server className="size-6" /> },
-		{ name: 'TypeScript', icon: <Code className="size-6" /> },
-		{ name: 'React', icon: <Globe className="size-6" /> },
-		{ name: 'Next.js', icon: <Globe className="size-6" /> },
-		{ name: 'React Native', icon: <Smartphone className="size-6" /> },
-		{ name: 'MongoDB', icon: <Database className="size-6" /> },
-		{ name: 'PostgreSQL', icon: <Database className="size-6" /> },
-		{ name: 'NestJs', icon: <Cpu className="size-6" /> },
-		{ name: 'Python', icon: <Code className="size-6" /> },
-		{ name: 'Go', icon: <Code className="size-6" /> },
-		{ name: 'Docker', icon: <Server className="size-6" /> },
-		{ name: 'Rust', icon: <Code className="size-6" /> },
-	];
+const particlesConfig: ISourceOptions = {
+	autoPlay: true,
+	background: {
+		color: {
+			value: '#000',
+		},
+		image: '',
+		position: '',
+		repeat: '',
+		size: '',
+		opacity: 1,
+	},
+	backgroundMask: {
+		composite: 'destination-out',
+		cover: {
+			color: {
+				value: '#fff',
+			},
+			opacity: 1,
+		},
+		enable: false,
+	},
+	clear: true,
+	defaultThemes: {},
+	delay: 0,
+	fullScreen: {
+		enable: true,
+		zIndex: -1,
+	},
+	detectRetina: true,
+	duration: 0,
+	fpsLimit: 120,
+	interactivity: {
+		detectsOn: 'window',
+		events: {
+			onClick: {
+				enable: false,
+				mode: [],
+			},
+			onDiv: {
+				selectors: [],
+				enable: false,
+				mode: [],
+				type: 'circle',
+			},
+			onHover: {
+				enable: false,
+				mode: [],
+				parallax: {
+					enable: false,
+					force: 2,
+					smooth: 10,
+				},
+			},
+			resize: {
+				delay: 0.5,
+				enable: true,
+			},
+		},
+		modes: {
+			trail: {
+				delay: 1,
+				pauseOnStop: false,
+				quantity: 1,
+			},
+			attract: {
+				distance: 200,
+				duration: 0.4,
+				easing: 'ease-out-quad',
+				factor: 1,
+				maxSpeed: 50,
+				speed: 1,
+			},
+			bounce: {
+				distance: 200,
+			},
+			bubble: {
+				distance: 200,
+				duration: 0.4,
+				mix: false,
+				divs: {
+					distance: 200,
+					duration: 0.4,
+					mix: false,
+					selectors: [],
+				},
+			},
+			connect: {
+				distance: 80,
+				links: {
+					opacity: 0.5,
+				},
+				radius: 60,
+			},
+			grab: {
+				distance: 100,
+				links: {
+					blink: false,
+					consent: false,
+					opacity: 1,
+				},
+			},
+			push: {
+				default: true,
+				groups: [],
+				quantity: 4,
+			},
+			remove: {
+				quantity: 2,
+			},
+			repulse: {
+				distance: 200,
+				duration: 0.4,
+				factor: 100,
+				speed: 1,
+				maxSpeed: 50,
+				easing: 'ease-out-quad',
+				divs: {
+					distance: 200,
+					duration: 0.4,
+					factor: 100,
+					speed: 1,
+					maxSpeed: 50,
+					easing: 'ease-out-quad',
+					selectors: [],
+				},
+			},
+			slow: {
+				factor: 3,
+				radius: 200,
+			},
+			light: {
+				area: {
+					gradient: {
+						start: {
+							value: '#ffffff',
+						},
+						stop: {
+							value: '#000000',
+						},
+					},
+					radius: 1_000,
+				},
+				shadow: {
+					color: {
+						value: '#000000',
+					},
+					length: 2_000,
+				},
+			},
+		},
+	},
+	manualParticles: [],
+	particles: {
+		bounce: {
+			horizontal: {
+				value: 1,
+			},
+			vertical: {
+				value: 1,
+			},
+		},
+		collisions: {
+			absorb: {
+				speed: 2,
+			},
+			bounce: {
+				horizontal: {
+					value: 1,
+				},
+				vertical: {
+					value: 1,
+				},
+			},
+			enable: false,
+			maxSpeed: 50,
+			mode: 'bounce',
+			overlap: {
+				enable: true,
+				retries: 0,
+			},
+		},
+		color: {
+			value: '#FF0000',
+			animation: {
+				h: {
+					count: 0,
+					enable: true,
+					speed: 10,
+					decay: 0,
+					delay: 0,
+					sync: true,
+					offset: 0,
+				},
+				s: {
+					count: 0,
+					enable: false,
+					speed: 1,
+					decay: 0,
+					delay: 0,
+					sync: true,
+					offset: 0,
+				},
+				l: {
+					count: 0,
+					enable: false,
+					speed: 1,
+					decay: 0,
+					delay: 0,
+					sync: true,
+					offset: 0,
+				},
+			},
+		},
+		effect: {
+			close: true,
+			fill: true,
+			options: {},
+			type: [],
+		},
+		groups: {},
+		move: {
+			angle: {
+				offset: 0,
+				value: 90,
+			},
+			attract: {
+				distance: 200,
+				enable: false,
+				rotate: {
+					x: 3_000,
+					y: 3_000,
+				},
+			},
+			center: {
+				x: 50,
+				y: 50,
+				mode: 'percent',
+				radius: 0,
+			},
+			decay: 0,
+			distance: {},
+			direction: 'none',
+			drift: 0,
+			enable: true,
+			gravity: {
+				acceleration: 9.81,
+				enable: false,
+				inverse: false,
+				maxSpeed: 50,
+			},
+			path: {
+				clamp: false,
+				delay: {
+					value: 0,
+				},
+				enable: true,
+				options: {
+					sides: 6,
+					turnSteps: 30,
+					angle: 30,
+				},
+				generator: 'polygonPathGenerator',
+			},
+			outModes: {
+				default: 'destroy',
+				bottom: 'destroy',
+				left: 'destroy',
+				right: 'destroy',
+				top: 'destroy',
+			},
+			random: false,
+			size: false,
+			speed: 3,
+			spin: {
+				acceleration: 0,
+				enable: false,
+			},
+			straight: false,
+			trail: {
+				enable: true,
+				length: 20,
+				fill: {
+					color: {
+						value: '#000',
+					},
+				},
+			},
+			vibrate: false,
+			warp: false,
+		},
+		number: {
+			density: {
+				enable: true,
+				width: 1_920,
+				height: 1_080,
+			},
+			limit: {
+				mode: 'delete',
+				value: 0,
+			},
+			value: 0,
+		},
+		opacity: {
+			value: 1,
+			animation: {
+				count: 0,
+				enable: false,
+				speed: 2,
+				decay: 0,
+				delay: 0,
+				sync: false,
+				mode: 'auto',
+				startValue: 'random',
+				destroy: 'none',
+			},
+		},
+		reduceDuplicates: false,
+		shadow: {
+			blur: 0,
+			color: {
+				value: '#000',
+			},
+			enable: false,
+			offset: {
+				x: 0,
+				y: 0,
+			},
+		},
+		shape: {
+			close: true,
+			fill: true,
+			options: {},
+			type: 'circle',
+		},
+		size: {
+			value: 2,
+			animation: {
+				count: 0,
+				enable: false,
+				speed: 5,
+				decay: 0,
+				delay: 0,
+				sync: false,
+				mode: 'auto',
+				startValue: 'random',
+				destroy: 'none',
+			},
+		},
+		stroke: {
+			width: 0,
+		},
+		zIndex: {
+			value: 0,
+			opacityRate: 1,
+			sizeRate: 1,
+			velocityRate: 1,
+		},
+		destroy: {
+			bounds: {},
+			mode: 'none',
+			split: {
+				count: 1,
+				factor: {
+					value: 3,
+				},
+				rate: {
+					value: {
+						min: 4,
+						max: 9,
+					},
+				},
+				sizeOffset: true,
+				particles: {},
+			},
+		},
+		roll: {
+			darken: {
+				enable: false,
+				value: 0,
+			},
+			enable: false,
+			enlighten: {
+				enable: false,
+				value: 0,
+			},
+			mode: 'vertical',
+			speed: 25,
+		},
+		tilt: {
+			value: 0,
+			animation: {
+				enable: false,
+				speed: 0,
+				decay: 0,
+				sync: false,
+			},
+			direction: 'clockwise',
+			enable: false,
+		},
+		twinkle: {
+			lines: {
+				enable: false,
+				frequency: 0.05,
+				opacity: 1,
+			},
+			particles: {
+				enable: false,
+				frequency: 0.05,
+				opacity: 1,
+			},
+		},
+		wobble: {
+			distance: 5,
+			enable: false,
+			speed: {
+				angle: 50,
+				move: 10,
+			},
+		},
+		life: {
+			count: 0,
+			delay: {
+				value: 0,
+				sync: false,
+			},
+			duration: {
+				value: 0,
+				sync: false,
+			},
+		},
+		rotate: {
+			value: 0,
+			animation: {
+				enable: false,
+				speed: 0,
+				decay: 0,
+				sync: false,
+			},
+			direction: 'clockwise',
+			path: false,
+		},
+		orbit: {
+			animation: {
+				count: 0,
+				enable: false,
+				speed: 1,
+				decay: 0,
+				delay: 0,
+				sync: false,
+			},
+			enable: false,
+			opacity: 1,
+			rotation: {
+				value: 45,
+			},
+			width: 1,
+		},
+		links: {
+			blink: false,
+			color: {
+				value: '#fff',
+			},
+			consent: false,
+			distance: 100,
+			enable: false,
+			frequency: 1,
+			opacity: 1,
+			shadow: {
+				blur: 5,
+				color: {
+					value: '#000',
+				},
+				enable: false,
+			},
+			triangles: {
+				enable: false,
+				frequency: 1,
+			},
+			width: 1,
+			warp: false,
+		},
+		repulse: {
+			value: 0,
+			enabled: false,
+			distance: 1,
+			duration: 1,
+			factor: 1,
+			speed: 1,
+		},
+	},
+	pauseOnBlur: true,
+	pauseOnOutsideViewport: true,
+	responsive: [],
+	smooth: false,
+	style: {},
+	themes: [],
+	zLayers: 100,
+	emitters: {
+		autoPlay: true,
+		fill: true,
+		life: {
+			wait: false,
+		},
+		rate: {
+			quantity: 1,
+			delay: 0.25,
+		},
+		shape: {
+			options: {},
+			replace: {
+				color: false,
+				opacity: false,
+			},
+			type: 'square',
+		},
+		startCount: 0,
+		size: {
+			mode: 'percent',
+			height: 0,
+			width: 0,
+		},
+		direction: 'none',
+		particles: {},
+		position: {
+			x: 50,
+			y: 50,
+		},
+	},
+	motion: {
+		disable: false,
+		reduce: {
+			factor: 4,
+			value: true,
+		},
+	},
+};
 
-	const bubbles = [
-		{ size: 100, position: { top: '10%', left: '5%' }, delay: 0 },
-		{ size: 60, position: { top: '20%', right: '10%' }, delay: 1 },
-		{ size: 80, position: { bottom: '15%', left: '15%' }, delay: 2 },
-		{ size: 40, position: { bottom: '10%', right: '20%' }, delay: 3 },
-		{ size: 70, position: { top: '40%', left: '25%' }, delay: 4 },
-		{ size: 50, position: { top: '60%', right: '5%' }, delay: 5 },
-		{ size: 90, position: { top: '70%', left: '40%' }, delay: 2.5 },
-		{ size: 45, position: { top: '30%', right: '35%' }, delay: 3.5 },
-		{ size: 65, position: { bottom: '30%', right: '45%' }, delay: 4.5 },
-		{ size: 55, position: { top: '5%', left: '50%' }, delay: 1.5 },
-	];
+export default function Home() {
+	const [init, setInit] = useState(false);
+
+	useEffect(() => {
+		void initParticlesEngine(async (engine) => {
+			await loadFull(engine);
+			// eslint-disable-next-line promise/prefer-await-to-then
+		}).then(() => {
+			setInit(true);
+		});
+	}, []);
 
 	return (
-		<div className="relative flex min-h-screen flex-col justify-between overflow-hidden bg-black px-8 py-16 text-white">
-			{bubbles.map((bubble, index) => (
-				<Bubble key={index} {...bubble} />
-			))}
-			<div className="z-10 mx-auto w-full max-w-3xl">
-				<div className="mb-16 flex items-start justify-between">
-					<div>
-						<motion.h1
-							animate={{ opacity: 1, y: 0 }}
-							className="mb-4 text-5xl font-bold"
-							initial={{ opacity: 0, y: 20 }}
-							transition={{ delay: 0.2, duration: 0.8 }}
-						>
-							<span className="gradient-text">Imran Barbhuiya</span>
-						</motion.h1>
-						<motion.p
-							animate={{ opacity: 1, y: 0 }}
-							className="mb-8 text-xl text-gray-400"
-							initial={{ opacity: 0, y: 20 }}
-							transition={{ delay: 0.4, duration: 0.8 }}
-						>
-							Full stack web developer & App developer
-						</motion.p>
-						<motion.div
-							animate={{ opacity: 1, y: 0 }}
-							className="flex space-x-4"
-							initial={{ opacity: 0, y: 20 }}
-							transition={{ delay: 0.6, duration: 0.8 }}
-						>
-							<a
-								className="transition-colors hover:text-pink-400"
-								href="https://github.com/imranbarbhuiya"
-								target="_blank"
-							>
-								<Github size={24} />
-							</a>
-							<a
-								className="transition-colors hover:text-pink-400"
-								href="https://www.linkedin.com/in/imranbarbhuiya/"
-								target="_blank"
-							>
-								<Linkedin size={24} />
-							</a>
-							<a className="transition-colors hover:text-pink-400" href="https://x.com/notparbez" target="_blank">
-								<X size={24} />
-							</a>
-						</motion.div>
-					</div>
-					<MotionLink
-						href="/3d"
-						transition={{ type: 'spring', stiffness: 300, damping: 10 }}
-						whileHover={{ scale: 1.1 }}
+		<main className="min-h-screen overflow-hidden bg-black text-white">
+			{init && <Particles className="absolute inset-0" id="tsparticles" options={particlesConfig} />}
+			{/* Hero Section */}
+			<div className="relative">
+				<div className="flex h-screen items-center justify-center px-4">
+					<motion.div
+						animate={{ opacity: 1, y: 0 }}
+						className="z-10 text-center"
+						initial={{ opacity: 0, y: 20 }}
+						transition={{ duration: 0.8 }}
 					>
-						<MotionImage
-							alt="SukuMeow"
-							animate={{ opacity: 1, scale: 1 }}
-							className="size-24 rounded-full border-2 border-white shadow-lg"
-							initial={{ opacity: 0, scale: 0.8 }}
-							src={cat}
-							transition={{ delay: 0.2, duration: 0.8 }}
-							whileHover={{
-								borderColor: ['#fff', '#EC4899', '#F97316', '#fff'],
-								transition: { duration: 2, repeat: Infinity },
-							}}
-						/>
-					</MotionLink>
+						<motion.div
+							animate={{ rotate: 360 }}
+							className="mb-8"
+							transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+						>
+							<Terminal className="mx-auto size-20 text-blue-500" />
+						</motion.div>
+						<h1 className="mb-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-5xl font-bold text-transparent md:text-7xl">
+							Imran Hussain Barbhuiya
+						</h1>
+						<p className="mb-6 text-3xl font-bold text-gray-300 md:text-4xl">Full Stack Developer</p>
+						<p className="mb-8 text-xl text-gray-400 md:text-2xl">Crafting digital experiences with code</p>
+						<div className="flex justify-center space-x-6">
+							{[
+								{ title: 'Github', link: 'https://github.com/imranbarbhuiya' },
+								{ title: 'Linkedin', link: 'https://www.linkedin.com/in/imranbarbhuiya/' },
+								{ title: 'X', link: 'https://x.com/notparbez' },
+							].map((platform) => (
+								<motion.a
+									className="rounded-lg bg-white/10 p-2 transition-colors hover:bg-white/20"
+									href={platform.link}
+									key={platform.title}
+									target="_blank"
+									whileHover={{ scale: 1.2, rotate: 5 }}
+									whileTap={{ scale: 0.9 }}
+								>
+									{platform.title === 'Github' && <Github size={24} />}
+									{platform.title === 'Linkedin' && <Linkedin size={24} />}
+									{platform.title === 'X' && <X size={24} />}
+								</motion.a>
+							))}
+						</div>
+					</motion.div>
 				</div>
-				<motion.div
-					animate={{ opacity: 1, y: 0 }}
-					className="mb-16"
-					initial={{ opacity: 0, y: 20 }}
-					transition={{ delay: 0.8, duration: 0.8 }}
-				>
-					<h2 className="mb-4 text-2xl font-semibold">About Me</h2>
-					<p className="leading-relaxed text-gray-300">
-						I'm a passionate Full Stack Developer with a strong drive for innovation and continuous learning. I enjoy
-						building and exploring new technologies, contributing to open-source projects, and connecting with others in
-						the tech community. My experience spans a wide range of programming languages, including{' '}
-						<span className="text-cyan-400">Rust, TypeScript, JavaScript, Python, C, C++, PHP, Dart, and Flutter</span>,
-						as well as frameworks and libraries such as{' '}
-						<span className="text-teal-300">React, Next.js, Remix, Svelte, React Native, Tauri, and Nest.js</span>. As a
-						self-taught developer, I'm a quick learner who thrives on tackling new challenges and expanding my
-						expertise.
-					</p>
-				</motion.div>
-				<motion.div
-					animate={{ opacity: 1, y: 0 }}
-					initial={{ opacity: 0, y: 20 }}
-					transition={{ delay: 1, duration: 0.8 }}
-				>
-					<h2 className="mb-4 text-2xl font-semibold">Skills</h2>
-					<div className="grid grid-cols-2 gap-4 md:grid-cols-3">
-						{skills.map((skill, index) => (
+			</div>
+			<motion.section
+				className="relative py-16"
+				initial={{ opacity: 0 }}
+				transition={{ duration: 0.8 }}
+				whileInView={{ opacity: 1 }}
+			>
+				<div className="mx-auto max-w-6xl px-4">
+					<h2 className="mb-12 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-center text-4xl font-bold text-transparent">
+						Tech Universe
+					</h2>
+					<div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+						{techStack.map(({ title, icon: Icon, skills }) => (
 							<motion.div
-								animate={{ opacity: 1, scale: 1 }}
-								className="flex cursor-pointer items-center space-x-3 rounded-lg bg-gray-800 p-4"
-								initial={{ opacity: 0, scale: 0.8 }}
-								key={skill.name}
-								transition={{ delay: index * 0.1 + 1.2, duration: 0.5 }}
-								whileHover={{
-									scale: 1.05,
-									rotate: [0, 5, -5, 0],
-									transition: { duration: 0.3 },
-								}}
+								className="rounded-xl border border-white/10 bg-white/5 p-4 backdrop-blur-lg transition-colors hover:bg-white/10"
+								key={title}
+								whileHover={{ scale: 1.02 }}
 							>
-								<motion.div transition={{ duration: 0.3 }} whileHover={{ rotate: 360 }}>
-									{skill.icon}
-								</motion.div>
-								<span>{skill.name}</span>
+								<div className="mb-2 flex items-center">
+									<Icon className="mr-2 size-5 text-blue-500" />
+									<h3 className="text-lg font-semibold">{title}</h3>
+								</div>
+								<div className="flex flex-wrap gap-1">
+									{skills.map((skill) => (
+										<motion.span
+											className="cursor-pointer rounded-full bg-white/5 px-2 py-1 text-sm transition-colors hover:bg-white/10"
+											key={skill}
+											whileHover={{ scale: 1.1 }}
+										>
+											{skill}
+										</motion.span>
+									))}
+								</div>
 							</motion.div>
 						))}
 					</div>
-				</motion.div>
-			</div>
-		</div>
+				</div>
+			</motion.section>
+			<section className="relative py-16">
+				<div className="mx-auto max-w-6xl px-4">
+					<h2 className="mb-12 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-center text-4xl font-bold text-transparent">
+						Featured Projects
+					</h2>
+					<div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+						{projects.map((project, index) => (
+							<motion.a
+								className="group relative"
+								href={project.link}
+								initial={{ opacity: 0, y: 20 }}
+								key={project.title}
+								target="_blank"
+								transition={{ delay: index * 0.1 }}
+								whileHover={{ scale: 1.02 }}
+								whileInView={{ opacity: 1, y: 0 }}
+							>
+								<div
+									className={`rounded-xl bg-gradient-to-br p-4 ${project.color} absolute inset-0 opacity-10 transition-opacity group-hover:opacity-20`}
+								/>
+								<div className="relative rounded-xl border border-white/10 bg-white/5 p-4 backdrop-blur-lg transition-colors hover:bg-white/10">
+									<h3 className="mb-2 text-lg font-semibold">{project.title}</h3>
+									<p className="mb-3 text-sm text-gray-400">{project.description}</p>
+									<div className="flex flex-wrap gap-1">
+										{project.tech.map((tech) => (
+											<motion.span
+												className="cursor-pointer rounded-full bg-white/5 px-2 py-1 text-xs transition-colors hover:bg-white/10"
+												key={tech}
+												whileHover={{ scale: 1.1 }}
+											>
+												{tech}
+											</motion.span>
+										))}
+									</div>
+								</div>
+							</motion.a>
+						))}
+					</div>
+				</div>
+			</section>
+			<motion.section
+				className="relative py-16"
+				initial={{ opacity: 0 }}
+				transition={{ duration: 0.8 }}
+				whileInView={{ opacity: 1 }}
+			>
+				<div className="mx-auto max-w-4xl px-4 text-center">
+					<h2 className="mb-8 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-4xl font-bold text-transparent">
+						Let's Create Something Amazing
+					</h2>
+					<p className="mb-8 text-lg text-gray-400">Always excited to collaborate on innovative projects</p>
+					<motion.a
+						className="rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 px-8 py-3 font-semibold text-white transition-colors hover:from-blue-600 hover:to-purple-600"
+						href="mailto:imranbarbhuiya.fsd@gmail.com"
+						whileHover={{ scale: 1.1 }}
+						whileTap={{ scale: 0.95 }}
+					>
+						Get in Touch
+					</motion.a>
+				</div>
+			</motion.section>
+		</main>
 	);
 }

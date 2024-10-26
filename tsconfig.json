@@ -14,7 +14,6 @@
 		"alwaysStrict": true,
 		"noUnusedLocals": true,
 		"removeComments": true,
-		"outDir": "dist",
 		"sourceMap": true,
 		"allowUnreachableCode": false,
 		"allowUnusedLabels": false,
@@ -29,6 +28,7 @@
 		"jsx": "preserve",
 		"incremental": true,
 		"skipLibCheck": true,
+		"verbatimModuleSyntax": true,
 		"plugins": [
 			{
 				"name": "next"
