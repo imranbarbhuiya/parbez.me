@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 	title: 'Parbez',
 	description: 'I am a software engineer who loves to build things.',
 	openGraph: {
-		images: ['/cat.png'],
+		images: ['/banner.png'],
 	},
 	metadataBase: new URL('https://parbez.me'),
 };
