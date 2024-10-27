@@ -1,9 +1,8 @@
-/* eslint-disable @typescript-eslint/no-require-imports, @typescript-eslint/no-var-requires */
 // @ts-expect-error -- internal file
-const { default: flattenColorPalette } = require('tailwindcss/lib/util/flattenColorPalette');
-const plugin = require('tailwindcss/plugin');
+import { default as flattenColorPalette } from 'tailwindcss/lib/util/flattenColorPalette';
+import plugin from 'tailwindcss/plugin';
+import animatePlugin from 'tailwindcss-animate';
 
-// eslint-disable-next-line @typescript-eslint/unbound-method
 const addVariablesForColors = plugin(({ addBase, theme }) => {
 	const allColors = flattenColorPalette(theme('colors'));
 	const newVars = Object.fromEntries(Object.entries(allColors).map(([key, val]) => [`--${key}`, val]));
@@ -272,5 +271,5 @@ export default {
 			'2xl': '1729px',
 		},
 	},
-	plugins: [addVariablesForColors, require('tailwindcss-animate')],
+	plugins: [addVariablesForColors, animatePlugin],
 };

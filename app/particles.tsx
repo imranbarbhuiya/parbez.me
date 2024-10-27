@@ -557,5 +557,7 @@ export const ParticlesBG = () => {
 		});
 	}, []);
 
-	return init && <Particles className="absolute inset-0" id="tsparticles" options={particlesConfig} />;
+	if (!init) return null;
+
+	return <Particles className="absolute inset-0" id="tsparticles" options={particlesConfig} />;
 };

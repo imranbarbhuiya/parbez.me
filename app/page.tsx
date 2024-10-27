@@ -1,6 +1,9 @@
 import { div as MotionDiv, a as MotionA, section as MotionSection, span as MotionSpan } from 'framer-motion/client';
-import { Github, Linkedin, X, Terminal, Globe, Smartphone, Server, Database } from 'lucide-react';
+import { Terminal, Globe, Smartphone, Server, Database, Brush } from 'lucide-react';
 
+import { Github } from './_icons/github';
+import { Linkedin } from './_icons/linkedin';
+import { X } from './_icons/x';
 import { ParticlesBG } from './particles';
 
 // import type { Variants } from 'framer-motion';
@@ -11,7 +14,7 @@ const techStack = [
 	{ title: 'Mobile', icon: Smartphone, skills: ['React Native', 'Expo', 'Tauri', 'Flutter'] },
 	{ title: 'Languages', icon: Terminal, skills: ['TypeScript', 'JavaScript', 'Rust', 'Go', 'Python'] },
 	{ title: 'Database', icon: Database, skills: ['PostgreSQL', 'MongoDB', 'DynamoDB'] },
-	{ title: 'Design', icon: Globe, skills: ['Figma', 'CSS3'] },
+	{ title: 'Design', icon: Brush, skills: ['Figma', 'CSS3'] },
 ];
 
 const projects = [
@@ -119,9 +122,9 @@ export default function Home() {
 									whileHover={{ scale: 1.2, rotate: idx === 0 ? 5 : idx === 2 ? -5 : 0 }}
 									whileTap={{ scale: 0.9 }}
 								>
-									{platform.title === 'Github' && <Github size={24} />}
-									{platform.title === 'Linkedin' && <Linkedin size={24} />}
-									{platform.title === 'X' && <X size={24} />}
+									{platform.title === 'Github' && <Github />}
+									{platform.title === 'Linkedin' && <Linkedin />}
+									{platform.title === 'X' && <X />}
 								</MotionA>
 							))}
 						</div>
