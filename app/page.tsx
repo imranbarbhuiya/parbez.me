@@ -1,12 +1,10 @@
-import { div as MotionDiv, a as MotionA, section as MotionSection, span as MotionSpan } from 'framer-motion/client';
+import { div as MotionDiv, a as MotionA, section as MotionSection, span as MotionSpan } from 'motion/react-client';
 import { Terminal, Globe, Smartphone, Server, Database, Brush } from 'lucide-react';
 
 import { Github } from './_icons/github';
 import { Linkedin } from './_icons/linkedin';
 import { X } from './_icons/x';
 import { ParticlesBG } from './particles';
-
-// import type { Variants } from 'framer-motion';
 
 const techStack = [
 	{ title: 'Frontend', icon: Globe, skills: ['Next.js', 'React', 'Nuxt', 'Vue', 'Remix', 'Svelte'] },
@@ -81,7 +79,7 @@ const projects = [
 
 export default function Home() {
 	return (
-		<main className="min-h-screen overflow-hidden bg-black text-white">
+		<main className="min-h-screen overflow-hidden text-white">
 			<ParticlesBG />
 			<div className="relative">
 				<div className="flex h-screen items-center justify-center px-4">
@@ -115,6 +113,7 @@ export default function Home() {
 								{ title: 'X', link: 'https://x.com/notparbez' },
 							].map((platform, idx) => (
 								<MotionA
+									area-label={platform.title}
 									className="rounded-lg bg-white/10 p-2 transition-colors hover:bg-white/20"
 									href={platform.link}
 									key={platform.title}

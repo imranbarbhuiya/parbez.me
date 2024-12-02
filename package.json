@@ -11,13 +11,14 @@
 		"format": "prettier --write --cache ."
 	},
 	"dependencies": {
+		"@tsparticles/engine": "^3.7.1",
 		"@tsparticles/react": "^3.0.0",
 		"@vercel/analytics": "^1.4.1",
-		"framer-motion": "^12.0.0-alpha.2",
 		"lucide-react": "^0.462.0",
+		"motion": "^12.0.0-alpha.2",
 		"next": "15.0.3",
-		"react": "19.0.0-rc-fb9a90fa48-20240614",
-		"react-dom": "19.0.0-rc-fb9a90fa48-20240614",
+		"react": "19.0.0-rc-66855b96-20241106",
+		"react-dom": "19.0.0-rc-66855b96-20241106",
 		"sharp": "^0.33.5",
 		"tailwindcss-animate": "^1.0.7",
 		"tsparticles": "^3.7.1"
@@ -25,7 +26,7 @@
 	"devDependencies": {
 		"@types/node": "22.10.1",
 		"@types/react": "npm:types-react@19.0.0-rc.1",
-		"@types/react-dom": "npm:types-react-dom@19.0.0",
+		"@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
 		"eslint": "9.16.0",
 		"eslint-config-mahir": "^1.0.6",
 		"eslint-plugin-tailwindcss": "^3.17.5",
@@ -37,6 +38,6 @@
 	"packageManager": "yarn@4.5.3",
 	"resolutions": {
 		"@types/react": "npm:types-react@19.0.0-rc.1",
-		"@types/react-dom": "npm:types-react-dom@19.0.0"
+		"@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
 	}
 }
