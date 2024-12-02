@@ -1,6 +1,7 @@
 /* eslint-disable id-length */
 'use client';
 
+import { loadPolygonPath } from '@tsparticles/path-polygon';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { useEffect, useState } from 'react';
 import { loadFull } from 'tsparticles';
@@ -551,6 +552,8 @@ export const ParticlesBG = () => {
 	useEffect(() => {
 		void initParticlesEngine(async (engine) => {
 			await loadFull(engine);
+			await loadPolygonPath(engine);
+
 			// eslint-disable-next-line promise/prefer-await-to-then
 		}).then(() => {
 			setInit(true);

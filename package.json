@@ -12,6 +12,7 @@
 	},
 	"dependencies": {
 		"@tsparticles/engine": "^3.7.1",
+		"@tsparticles/path-polygon": "^3.7.1",
 		"@tsparticles/react": "^3.0.0",
 		"@vercel/analytics": "^1.4.1",
 		"lucide-react": "^0.462.0",

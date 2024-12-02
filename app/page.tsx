@@ -1,5 +1,5 @@
-import { div as MotionDiv, a as MotionA, section as MotionSection, span as MotionSpan } from 'motion/react-client';
 import { Terminal, Globe, Smartphone, Server, Database, Brush } from 'lucide-react';
+import { div as MotionDiv, a as MotionA, section as MotionSection, span as MotionSpan } from 'motion/react-client';
 
 import { Github } from './_icons/github';
 import { Linkedin } from './_icons/linkedin';

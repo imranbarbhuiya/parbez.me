@@ -2310,6 +2310,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tsparticles/path-polygon@npm:^3.7.1":
+  version: 3.7.1
+  resolution: "@tsparticles/path-polygon@npm:3.7.1"
+  dependencies:
+    "@tsparticles/engine": "npm:3.7.1"
+  checksum: 10/449666b8d012805ba4e5b4c72062a2618a3733626c3b13eaec6a373f6f980f76a43b68b31f94c87c281d948cca00e245d5a3f7160a85207d53cec0147a3a82b2
+  languageName: node
+  linkType: hard
+
 "@tsparticles/plugin-absorbers@npm:3.7.1":
   version: 3.7.1
   resolution: "@tsparticles/plugin-absorbers@npm:3.7.1"
@@ -7277,6 +7286,7 @@ __metadata:
   resolution: "parbez@workspace:."
   dependencies:
     "@tsparticles/engine": "npm:^3.7.1"
+    "@tsparticles/path-polygon": "npm:^3.7.1"
     "@tsparticles/react": "npm:^3.0.0"
     "@types/node": "npm:22.10.1"
     "@types/react": "npm:types-react@19.0.0-rc.1"
