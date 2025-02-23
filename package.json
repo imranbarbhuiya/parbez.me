@@ -16,7 +16,7 @@
 		"@tsparticles/react": "^3.0.0",
 		"@vercel/analytics": "^1.5.0",
 		"lucide-react": "^0.475.0",
-		"motion": "^12.4.5",
+		"motion": "^12.4.7",
 		"next": "15.1.7",
 		"react": "19.0.0",
 		"react-dom": "19.0.0",
@@ -25,14 +25,14 @@
 		"tsparticles": "^3.8.1"
 	},
 	"devDependencies": {
-		"@types/node": "22.13.4",
+		"@types/node": "22.13.5",
 		"@types/react": "npm:types-react@19.0.0-rc.1",
 		"@types/react-dom": "npm:types-react-dom@19.0.0",
-		"eslint": "9.20.1",
+		"eslint": "9.21.0",
 		"eslint-config-mahir": "^1.0.7",
 		"eslint-plugin-tailwindcss": "^3.18.0",
 		"postcss": "^8.5.3",
-		"prettier": "^3.5.1",
+		"prettier": "^3.5.2",
 		"tailwindcss": "^3.4.17",
 		"typescript": "5.7.3"
 	},
