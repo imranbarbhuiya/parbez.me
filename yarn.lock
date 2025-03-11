@@ -1363,6 +1363,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eslint/config-helpers@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@eslint/config-helpers@npm:0.1.0"
+  checksum: 10/899b4783c2ecd45322b2e3b2f839c8bf687e237769aae65b1a8aa1fd90dbead3a07a37866136894b89d67c9eadece4771074f40804c6d2a864fb60870ce687f6
+  languageName: node
+  linkType: hard
+
 "@eslint/core@npm:^0.12.0":
   version: 0.12.0
   resolution: "@eslint/core@npm:0.12.0"
@@ -1420,10 +1427,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.21.0":
-  version: 9.21.0
-  resolution: "@eslint/js@npm:9.21.0"
-  checksum: 10/6c03f96a3e7c5825e780c707edbaa211ca976007a7194794a1e0cfaba76eae8759c9076ac15cab929b57323a117a385e99711395cbb3e58b8af7e5d95097160c
+"@eslint/js@npm:9.22.0":
+  version: 9.22.0
+  resolution: "@eslint/js@npm:9.22.0"
+  checksum: 10/2d7725f29ee4a7c85f5b5c499945d60f7701877b41b580d3f7badef43901ac98e4f8f76e4cfaef9ba116966c5f7b67132161e31e02f2eeccb0d09b548f6ea1b2
   languageName: node
   linkType: hard
 
@@ -1755,10 +1762,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/env@npm:15.2.0":
-  version: 15.2.0
-  resolution: "@next/env@npm:15.2.0"
-  checksum: 10/8fa52c92f8370df72ca2a2f9a90169549707eae4e463fd395e5616dd843fc2faf4c74e82dd47ce0ab967fa6dc815a26ba5077e095dd90d998d9868ab07c47000
+"@next/env@npm:15.2.1":
+  version: 15.2.1
+  resolution: "@next/env@npm:15.2.1"
+  checksum: 10/13551997d83c6524e4a26b34b8736dbfc35ef89b3be97ec84aa1e1bc2235f39d63ddeef8ff2eccfd199a9692b525446928fc78366f058221fcacfe15e683725a
   languageName: node
   linkType: hard
 
@@ -1771,58 +1778,58 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/swc-darwin-arm64@npm:15.2.0":
-  version: 15.2.0
-  resolution: "@next/swc-darwin-arm64@npm:15.2.0"
+"@next/swc-darwin-arm64@npm:15.2.1":
+  version: 15.2.1
+  resolution: "@next/swc-darwin-arm64@npm:15.2.1"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@next/swc-darwin-x64@npm:15.2.0":
-  version: 15.2.0
-  resolution: "@next/swc-darwin-x64@npm:15.2.0"
+"@next/swc-darwin-x64@npm:15.2.1":
+  version: 15.2.1
+  resolution: "@next/swc-darwin-x64@npm:15.2.1"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@next/swc-linux-arm64-gnu@npm:15.2.0":
-  version: 15.2.0
-  resolution: "@next/swc-linux-arm64-gnu@npm:15.2.0"
+"@next/swc-linux-arm64-gnu@npm:15.2.1":
+  version: 15.2.1
+  resolution: "@next/swc-linux-arm64-gnu@npm:15.2.1"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@next/swc-linux-arm64-musl@npm:15.2.0":
-  version: 15.2.0
-  resolution: "@next/swc-linux-arm64-musl@npm:15.2.0"
+"@next/swc-linux-arm64-musl@npm:15.2.1":
+  version: 15.2.1
+  resolution: "@next/swc-linux-arm64-musl@npm:15.2.1"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@next/swc-linux-x64-gnu@npm:15.2.0":
-  version: 15.2.0
-  resolution: "@next/swc-linux-x64-gnu@npm:15.2.0"
+"@next/swc-linux-x64-gnu@npm:15.2.1":
+  version: 15.2.1
+  resolution: "@next/swc-linux-x64-gnu@npm:15.2.1"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@next/swc-linux-x64-musl@npm:15.2.0":
-  version: 15.2.0
-  resolution: "@next/swc-linux-x64-musl@npm:15.2.0"
+"@next/swc-linux-x64-musl@npm:15.2.1":
+  version: 15.2.1
+  resolution: "@next/swc-linux-x64-musl@npm:15.2.1"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@next/swc-win32-arm64-msvc@npm:15.2.0":
-  version: 15.2.0
-  resolution: "@next/swc-win32-arm64-msvc@npm:15.2.0"
+"@next/swc-win32-arm64-msvc@npm:15.2.1":
+  version: 15.2.1
+  resolution: "@next/swc-win32-arm64-msvc@npm:15.2.1"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@next/swc-win32-x64-msvc@npm:15.2.0":
-  version: 15.2.0
-  resolution: "@next/swc-win32-x64-msvc@npm:15.2.0"
+"@next/swc-win32-x64-msvc@npm:15.2.1":
+  version: 15.2.1
+  resolution: "@next/swc-win32-x64-msvc@npm:15.2.1"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -2575,12 +2582,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:22.13.9":
-  version: 22.13.9
-  resolution: "@types/node@npm:22.13.9"
+"@types/node@npm:22.13.10":
+  version: 22.13.10
+  resolution: "@types/node@npm:22.13.10"
   dependencies:
     undici-types: "npm:~6.20.0"
-  checksum: 10/23560df3ee99c907179c688754486b969a72144f2e2bdefe974d320dddc5ca8f93365842966ecbd5c5bba34e919fc1a5a6627712beb8e7f71d71347dcf414a35
+  checksum: 10/57dc6a5e0110ca9edea8d7047082e649fa7fa813f79e4a901653b9174141c622f4336435648baced5b38d9f39843f404fa2d8d7a10981610da26066bc8caab48
   languageName: node
   linkType: hard
 
@@ -4365,6 +4372,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-scope@npm:^8.3.0":
+  version: 8.3.0
+  resolution: "eslint-scope@npm:8.3.0"
+  dependencies:
+    esrecurse: "npm:^4.3.0"
+    estraverse: "npm:^5.2.0"
+  checksum: 10/ee1ff009e949423639a8b53453c0cb189967d9142c5d94dc3752bed9880140a0760007148ac6b0bd03557d70ede9cd7c3b1e66f9a7f3427b2dbeca2a5be22c91
+  languageName: node
+  linkType: hard
+
 "eslint-utils@npm:^3.0.0":
   version: 3.0.0
   resolution: "eslint-utils@npm:3.0.0"
@@ -4397,16 +4414,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:9.21.0":
-  version: 9.21.0
-  resolution: "eslint@npm:9.21.0"
+"eslint@npm:9.22.0":
+  version: 9.22.0
+  resolution: "eslint@npm:9.22.0"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.2.0"
     "@eslint-community/regexpp": "npm:^4.12.1"
     "@eslint/config-array": "npm:^0.19.2"
+    "@eslint/config-helpers": "npm:^0.1.0"
     "@eslint/core": "npm:^0.12.0"
     "@eslint/eslintrc": "npm:^3.3.0"
-    "@eslint/js": "npm:9.21.0"
+    "@eslint/js": "npm:9.22.0"
     "@eslint/plugin-kit": "npm:^0.2.7"
     "@humanfs/node": "npm:^0.16.6"
     "@humanwhocodes/module-importer": "npm:^1.0.1"
@@ -4418,7 +4436,7 @@ __metadata:
     cross-spawn: "npm:^7.0.6"
     debug: "npm:^4.3.2"
     escape-string-regexp: "npm:^4.0.0"
-    eslint-scope: "npm:^8.2.0"
+    eslint-scope: "npm:^8.3.0"
     eslint-visitor-keys: "npm:^4.2.0"
     espree: "npm:^10.3.0"
     esquery: "npm:^1.5.0"
@@ -4442,7 +4460,7 @@ __metadata:
       optional: true
   bin:
     eslint: bin/eslint.js
-  checksum: 10/8bd8f1d26e5ddf289888f837d9eacdd841b2ae1cf4ab221f676f139b1a66367ff07d5cb2be29d2ae7c2c65c06fdf5ca9e460e4d0ee10c07bc02503706c038005
+  checksum: 10/0a21a46fb4a4d83840d60d7a3689bc1b2f6b3594a92d8fcb08b8d8f8d14be1098fa71d41b3863590af5a74fee847afa0a98d002dbbbe867cdb3b3eced3d7765e
   languageName: node
   linkType: hard
 
@@ -4717,12 +4735,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:^12.4.9":
-  version: 12.4.9
-  resolution: "framer-motion@npm:12.4.9"
+"framer-motion@npm:^12.4.11":
+  version: 12.4.11
+  resolution: "framer-motion@npm:12.4.11"
   dependencies:
-    motion-dom: "npm:^12.4.5"
-    motion-utils: "npm:^12.0.0"
+    motion-dom: "npm:^12.4.11"
+    motion-utils: "npm:^12.4.10"
     tslib: "npm:^2.4.0"
   peerDependencies:
     "@emotion/is-prop-valid": "*"
@@ -4735,7 +4753,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10/e72ef8efbd6eba3356b7ce2a25c7402f0233a3d6ff38f4a179c56cc2ce4dd79fcae584b10e3914d76032c90db5d3faf9be3da3548a46145959f0823c45e10107
+  checksum: 10/e0de7f434c489c8cbdce0d60a7a21170af9692f88b0b87d5c46df730e2d8e699540ca464abbfac43ffc4366a56f4ee2756359da63733c11ea1a28af0f93ce0ef
   languageName: node
   linkType: hard
 
@@ -5813,12 +5831,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:^0.477.0":
-  version: 0.477.0
-  resolution: "lucide-react@npm:0.477.0"
+"lucide-react@npm:^0.479.0":
+  version: 0.479.0
+  resolution: "lucide-react@npm:0.479.0"
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 10/41c1c655a3f10dcdf95a7542c7c3a65c89d29f604063b0200b56dc7aaa9409e0c9f8fd860e09655bcee0d44e74960d472bd4f8aa658e687ff872659a129bafd1
+  checksum: 10/bcdfb378d8ace181de645e649405dc04f8cfa7bbd83f91bc6f6e77a6c106221b1a84a55ff6b5cdcf2e56563182b0a44a356d59a5400ab978a8b12482d89f30eb
   languageName: node
   linkType: hard
 
@@ -6469,27 +6487,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"motion-dom@npm:^12.4.5":
-  version: 12.4.5
-  resolution: "motion-dom@npm:12.4.5"
+"motion-dom@npm:^12.4.11":
+  version: 12.4.11
+  resolution: "motion-dom@npm:12.4.11"
   dependencies:
-    motion-utils: "npm:^12.0.0"
-  checksum: 10/40c84519266093813a59c340324b3b7134c750075fb50abac8ed2d1cde83d50f084ddf53910fc1e82bd28d932e9a2d1c0fba49dbe8d7aa97b3f8c814b17664ad
+    motion-utils: "npm:^12.4.10"
+  checksum: 10/dc27f72d4d0be4b3dbc3fbee55c3665f4674d202d46cd458d9b5594e0929970c04763025c93e9c571be133118d102c29c31b694ceede96b67a5db2224607bd83
   languageName: node
   linkType: hard
 
-"motion-utils@npm:^12.0.0":
-  version: 12.0.0
-  resolution: "motion-utils@npm:12.0.0"
-  checksum: 10/e73b82cf36746f6d498bc48450d34bf8d51128279d8f542cab8a02edf13368d0b99e4208c6d60c670fac5481c60e09d590db7345e390070ed0499dd4367d1695
+"motion-utils@npm:^12.4.10":
+  version: 12.4.10
+  resolution: "motion-utils@npm:12.4.10"
+  checksum: 10/a5d018df30e6292da5844eca9dbf96633b9c9ef5654d708323dfee6ba2303f6f67e277f874dd68ad499bedf4a406545960f8e10015e1d1c76149172f56ad04aa
   languageName: node
   linkType: hard
 
-"motion@npm:^12.4.9":
-  version: 12.4.9
-  resolution: "motion@npm:12.4.9"
+"motion@npm:^12.4.11":
+  version: 12.4.11
+  resolution: "motion@npm:12.4.11"
   dependencies:
-    framer-motion: "npm:^12.4.9"
+    framer-motion: "npm:^12.4.11"
     tslib: "npm:^2.4.0"
   peerDependencies:
     "@emotion/is-prop-valid": "*"
@@ -6502,7 +6520,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10/e27028633eda394c404447b6671e33c472738b651ade3fef4b7d1de133cd44360c940622a5bc7aff7509558493cb61c68038583f0f6006d9388ace1d7445a3f5
+  checksum: 10/623d159fbf97422be8ce9f951d38f15d24d599483487a7da9f4cda1a312e66625c2576b5efef6e847eaa1eb1d7ac6c0a5cd069b41c4927839f2dceaed2455ce2
   languageName: node
   linkType: hard
 
@@ -6570,19 +6588,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:15.2.0":
-  version: 15.2.0
-  resolution: "next@npm:15.2.0"
+"next@npm:15.2.1":
+  version: 15.2.1
+  resolution: "next@npm:15.2.1"
   dependencies:
-    "@next/env": "npm:15.2.0"
-    "@next/swc-darwin-arm64": "npm:15.2.0"
-    "@next/swc-darwin-x64": "npm:15.2.0"
-    "@next/swc-linux-arm64-gnu": "npm:15.2.0"
-    "@next/swc-linux-arm64-musl": "npm:15.2.0"
-    "@next/swc-linux-x64-gnu": "npm:15.2.0"
-    "@next/swc-linux-x64-musl": "npm:15.2.0"
-    "@next/swc-win32-arm64-msvc": "npm:15.2.0"
-    "@next/swc-win32-x64-msvc": "npm:15.2.0"
+    "@next/env": "npm:15.2.1"
+    "@next/swc-darwin-arm64": "npm:15.2.1"
+    "@next/swc-darwin-x64": "npm:15.2.1"
+    "@next/swc-linux-arm64-gnu": "npm:15.2.1"
+    "@next/swc-linux-arm64-musl": "npm:15.2.1"
+    "@next/swc-linux-x64-gnu": "npm:15.2.1"
+    "@next/swc-linux-x64-musl": "npm:15.2.1"
+    "@next/swc-win32-arm64-msvc": "npm:15.2.1"
+    "@next/swc-win32-x64-msvc": "npm:15.2.1"
     "@swc/counter": "npm:0.1.3"
     "@swc/helpers": "npm:0.5.15"
     busboy: "npm:1.6.0"
@@ -6627,7 +6645,7 @@ __metadata:
       optional: true
   bin:
     next: dist/bin/next
-  checksum: 10/017858b8469c2a2d22843254279b8cb7ce54279127e70ba361b80de1759b2922bfb75bbd1b60e25e0236ccecd9d804cd8657569c0368d20890e6cfa64efae6f0
+  checksum: 10/f4c624672158018d9a2452bdcaba456b5639ebb412dbe1775dcac8b8c1d8fdf5fae99ab8f047a6678b04165ff91c619666fecf2da12d531aebc31461560eec9a
   languageName: node
   linkType: hard
 
@@ -6893,16 +6911,16 @@ __metadata:
     "@tsparticles/engine": "npm:^3.8.1"
     "@tsparticles/path-polygon": "npm:^3.8.1"
     "@tsparticles/react": "npm:^3.0.0"
-    "@types/node": "npm:22.13.9"
+    "@types/node": "npm:22.13.10"
     "@types/react": "npm:types-react@19.0.0-rc.1"
     "@types/react-dom": "npm:types-react-dom@19.0.0"
     "@vercel/analytics": "npm:^1.5.0"
-    eslint: "npm:9.21.0"
+    eslint: "npm:9.22.0"
     eslint-config-mahir: "npm:^1.0.7"
     eslint-plugin-tailwindcss: "npm:^3.18.0"
-    lucide-react: "npm:^0.477.0"
-    motion: "npm:^12.4.9"
-    next: "npm:15.2.0"
+    lucide-react: "npm:^0.479.0"
+    motion: "npm:^12.4.11"
+    next: "npm:15.2.1"
     postcss: "npm:^8.5.3"
     prettier: "npm:^3.5.3"
     react: "npm:19.0.0"
