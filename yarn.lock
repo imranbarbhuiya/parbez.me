@@ -2488,12 +2488,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:22.14.0":
-  version: 22.14.0
-  resolution: "@types/node@npm:22.14.0"
+"@types/node@npm:*, @types/node@npm:22.14.1":
+  version: 22.14.1
+  resolution: "@types/node@npm:22.14.1"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10/d0669a8a37a18532c886ccfa51eb3fe1e46088deb4d3d27ebcd5d7d68bd6343ad1c7a3fcb85164780a57629359c33a6c917ecff748ea232bceac7692acc96537
+  checksum: 10/561b1ad98ef5176d6da856ffbbe494f16655149f6a7d561de0423c8784910c81267d7d6459f59d68a97b3cbae9b5996b3b5dfe64f4de3de2239d295dcf4a4dcc
   languageName: node
   linkType: hard
 
@@ -4507,12 +4507,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:^12.6.3":
-  version: 12.6.3
-  resolution: "framer-motion@npm:12.6.3"
+"framer-motion@npm:^12.6.5":
+  version: 12.6.5
+  resolution: "framer-motion@npm:12.6.5"
   dependencies:
-    motion-dom: "npm:^12.6.3"
-    motion-utils: "npm:^12.6.3"
+    motion-dom: "npm:^12.6.5"
+    motion-utils: "npm:^12.6.5"
     tslib: "npm:^2.4.0"
   peerDependencies:
     "@emotion/is-prop-valid": "*"
@@ -4525,7 +4525,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10/d3d22a3c77564df477be16ffd321bb8ab050005622a36b32c48ae3ad158dd889dd653ce95d109584efb784e9e5136b30335c20bafbf8e558ab53767f143c10a1
+  checksum: 10/70c38fdb7e790140672b4d71a8574b50de862bea6d646a88a61155319c58f96012102b6222d13384ca574a578e4d87c7292381e2deede8b0cef49db1a8c5a719
   languageName: node
   linkType: hard
 
@@ -6245,27 +6245,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"motion-dom@npm:^12.6.3":
-  version: 12.6.3
-  resolution: "motion-dom@npm:12.6.3"
+"motion-dom@npm:^12.6.5":
+  version: 12.6.5
+  resolution: "motion-dom@npm:12.6.5"
   dependencies:
-    motion-utils: "npm:^12.6.3"
-  checksum: 10/3f9105fedf851e3619b6631283fca374dd90fd01558ef1806ac3cc027416fb63b6cd24a2a19ec0ddcda717e141a87c226655ac19b12ae1b2c3deefc325ac0934
+    motion-utils: "npm:^12.6.5"
+  checksum: 10/7a4b7eacc5416a8c3ecdc3a486507990cd328a8089daba2939cc84014d22ab2e22e6d2808fcc47f5769f141e55f860044985aa1c829dddeffa0e7595a21f49ea
   languageName: node
   linkType: hard
 
-"motion-utils@npm:^12.6.3":
-  version: 12.6.3
-  resolution: "motion-utils@npm:12.6.3"
-  checksum: 10/295fe81dbb82d840723a92cf280013ae394a93bbdb9b6717d5c37bf2c5ac6c2bab4ebe19c52cf0b515dc88cd32d64ba767829ba9294717f38305d5375f8c1de4
+"motion-utils@npm:^12.6.5":
+  version: 12.6.5
+  resolution: "motion-utils@npm:12.6.5"
+  checksum: 10/e5566ed76bf669ecff91f08618fd288a75e6da90dce3b8fdcb6369a9d124b68b4dea8a20a71c0ad15265fdde15acae96e22fc06ca717eeb44383ac2e497fa5ea
   languageName: node
   linkType: hard
 
-"motion@npm:^12.6.3":
-  version: 12.6.3
-  resolution: "motion@npm:12.6.3"
+"motion@npm:^12.6.5":
+  version: 12.6.5
+  resolution: "motion@npm:12.6.5"
   dependencies:
-    framer-motion: "npm:^12.6.3"
+    framer-motion: "npm:^12.6.5"
     tslib: "npm:^2.4.0"
   peerDependencies:
     "@emotion/is-prop-valid": "*"
@@ -6278,7 +6278,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10/0ba500fb869bd5c2a37e2b3696db86a10a2f2e07fd3f7934d43075d92db759e22ae9d5629346531508d1ee314d89902637eadc2acba1e2076eacd41ac41e10e9
+  checksum: 10/4b8bb15ef616a6fdfe1d61a4862a2d3baf97b982c72e68e35c47b65168b1d78bdfbef30443cd7abee93c6aa971dd0eecdff5d5d02f0ac8f16382c56f64f3f40c
   languageName: node
   linkType: hard
 
@@ -6660,7 +6660,7 @@ __metadata:
     "@tsparticles/engine": "npm:^3.8.1"
     "@tsparticles/path-polygon": "npm:^3.8.1"
     "@tsparticles/react": "npm:^3.0.0"
-    "@types/node": "npm:22.14.0"
+    "@types/node": "npm:22.14.1"
     "@types/react": "npm:types-react@19.0.0-rc.1"
     "@types/react-dom": "npm:types-react-dom@19.0.0"
     "@vercel/analytics": "npm:^1.5.0"
@@ -6668,7 +6668,7 @@ __metadata:
     eslint-config-mahir: "npm:^1.0.7"
     eslint-plugin-tailwindcss: "npm:^3.18.0"
     lucide-react: "npm:^0.487.0"
-    motion: "npm:^12.6.3"
+    motion: "npm:^12.6.5"
     next: "npm:15.3.0"
     postcss: "npm:^8.5.3"
     prettier: "npm:^3.5.3"
