@@ -15,8 +15,8 @@
 		"@tsparticles/path-polygon": "^3.8.1",
 		"@tsparticles/react": "^3.0.0",
 		"@vercel/analytics": "^1.5.0",
-		"lucide-react": "^0.510.0",
-		"motion": "^12.11.0",
+		"lucide-react": "^0.511.0",
+		"motion": "^12.12.1",
 		"next": "15.3.2",
 		"react": "19.1.0",
 		"react-dom": "19.1.0",
@@ -25,10 +25,10 @@
 		"tsparticles": "^3.8.1"
 	},
 	"devDependencies": {
-		"@types/node": "22.15.17",
+		"@types/node": "22.15.18",
 		"@types/react": "npm:types-react@19.0.0-rc.1",
 		"@types/react-dom": "npm:types-react-dom@19.0.0",
-		"eslint": "9.26.0",
+		"eslint": "9.27.0",
 		"eslint-config-mahir": "^1.0.7",
 		"eslint-plugin-tailwindcss": "^3.18.0",
 		"postcss": "^8.5.3",
