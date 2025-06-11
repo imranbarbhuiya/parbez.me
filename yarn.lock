@@ -2495,12 +2495,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:22.15.29":
-  version: 22.15.29
-  resolution: "@types/node@npm:22.15.29"
+"@types/node@npm:*, @types/node@npm:22.15.31":
+  version: 22.15.31
+  resolution: "@types/node@npm:22.15.31"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10/3426790c5aa22df445213d7f37e57ea261cf3013030fe9b3025d87c302097799a9db3b848e2a9bdb07cab8ec6c7e9947ac770cf11e12e420148296b63d63e7db
+  checksum: 10/999da153fae4687c416421850ebd3c94be75e0dae27ccad192d9a073c7e74baade987d68fc9f082a825c4672bd8a26867636663baad0b9e851baf7b36fb9fdd9
   languageName: node
   linkType: hard
 
@@ -4543,11 +4543,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:^12.15.0":
-  version: 12.15.0
-  resolution: "framer-motion@npm:12.15.0"
+"framer-motion@npm:^12.17.0":
+  version: 12.17.0
+  resolution: "framer-motion@npm:12.17.0"
   dependencies:
-    motion-dom: "npm:^12.15.0"
+    motion-dom: "npm:^12.17.0"
     motion-utils: "npm:^12.12.1"
     tslib: "npm:^2.4.0"
   peerDependencies:
@@ -4561,7 +4561,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10/48da17296ebccfff6f8985f2aceb9b28a62c332fb06c27410d8072ac3ab85fcd924b4645c1911ba4ce1b1a46b9eb22103c9f46d4fed20b8ac905a79bd3f61c92
+  checksum: 10/803b57cb7ec7200938c9425392a66839c96bf5a800ff14b38d9e689a47341678c53ce54765f68f0a186cfad6c1270b2ad46a75aeff67b2a2e2f3b846852d792c
   languageName: node
   linkType: hard
 
@@ -5638,12 +5638,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:^0.511.0":
-  version: 0.511.0
-  resolution: "lucide-react@npm:0.511.0"
+"lucide-react@npm:^0.514.0":
+  version: 0.514.0
+  resolution: "lucide-react@npm:0.514.0"
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 10/d712f4215a2e2563e145a6946f0e2be2cf6a081ac52d832e521996ba1c1fda91881445a4e78affa0bde520b3ad9f25ff83b8097f9baf2e192ce8f732d78e1402
+  checksum: 10/b58042ffd1a6117b5e5119987f93da393464af718203cc62a1952a3abc5d49f15d9427f0e810be893737533186367dbba3ff7efca5ab2cd414d598bead5a9c9f
   languageName: node
   linkType: hard
 
@@ -6301,12 +6301,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"motion-dom@npm:^12.15.0":
-  version: 12.15.0
-  resolution: "motion-dom@npm:12.15.0"
+"motion-dom@npm:^12.17.0":
+  version: 12.17.0
+  resolution: "motion-dom@npm:12.17.0"
   dependencies:
     motion-utils: "npm:^12.12.1"
-  checksum: 10/ab5c8e46c02514caa42416696aefd26ed2ca18cd83cc47b20c600098f972b7ef2ce5be6d0fabf09b3d2ac9fb0b989e302a42ca798e32412079269329aca0a57b
+  checksum: 10/54b482d643ca12d895e8a0860809b2b53f2e7c2981d12f3d1230f5bd6154cb59df6ab81a690681df7a526da283aaf76acbf351b148e2b805ad5f8ce97156e061
   languageName: node
   linkType: hard
 
@@ -6317,11 +6317,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"motion@npm:^12.15.0":
-  version: 12.15.0
-  resolution: "motion@npm:12.15.0"
+"motion@npm:^12.17.0":
+  version: 12.17.0
+  resolution: "motion@npm:12.17.0"
   dependencies:
-    framer-motion: "npm:^12.15.0"
+    framer-motion: "npm:^12.17.0"
     tslib: "npm:^2.4.0"
   peerDependencies:
     "@emotion/is-prop-valid": "*"
@@ -6334,7 +6334,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10/2ccc5fce749fecc95e1c1a5feb7d5869c8f41308a2bc49f956197e9dd2358fd7dbfd32493cd0d1b93346850a00154425d1bb5d553568d14aadaa68111dfd07cf
+  checksum: 10/4fde3c4f39fa872cb27a41ddf39dcf20a9a066428ce07cf7455e2a4779d916a47cb3141e8c4c970f9d7b8e8818b822f3eeb86761d61904a18383b82426f5f3ca
   languageName: node
   linkType: hard
 
@@ -6716,15 +6716,15 @@ __metadata:
     "@tsparticles/engine": "npm:^3.8.1"
     "@tsparticles/path-polygon": "npm:^3.8.1"
     "@tsparticles/react": "npm:^3.0.0"
-    "@types/node": "npm:22.15.29"
+    "@types/node": "npm:22.15.31"
     "@types/react": "npm:types-react@19.0.0-rc.1"
     "@types/react-dom": "npm:types-react-dom@19.0.0"
     "@vercel/analytics": "npm:^1.5.0"
     eslint: "npm:9.28.0"
     eslint-config-mahir: "npm:^1.0.7"
     eslint-plugin-tailwindcss: "npm:^3.18.0"
-    lucide-react: "npm:^0.511.0"
-    motion: "npm:^12.15.0"
+    lucide-react: "npm:^0.514.0"
+    motion: "npm:^12.17.0"
     next: "npm:15.3.3"
     postcss: "npm:^8.5.4"
     prettier: "npm:^3.5.3"
