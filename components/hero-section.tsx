@@ -1,7 +1,8 @@
 'use client';
 
 import { createLucideIcon, Github, Linkedin } from 'lucide-react';
-import { useState, useEffect } from 'react';
+
+import { TypeWriterEffectText } from './typewtiter-text';
 // import { InteractiveTerminal } from './interactive-terminal';
 
 const XIcon = createLucideIcon('X', [
@@ -12,26 +13,12 @@ const XIcon = createLucideIcon('X', [
 			d: 'M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z',
 			stroke: 'none',
 			fill: 'currentColor',
+			key: 'x-icon-path',
 		},
 	],
 ]);
 
 export function HeroSection() {
-	const [displayText, setDisplayText] = useState('');
-	const fullText = 'Imran Hussain Barbhuiya';
-
-	useEffect(() => {
-		let i = 0;
-		const timer = setInterval(() => {
-			if (i < fullText.length) {
-				setDisplayText(fullText.slice(0, i + 1));
-				i++;
-			} else clearInterval(timer);
-		}, 100);
-
-		return () => clearInterval(timer);
-	}, []);
-
 	return (
 		<section className="py-12 border-b border-gray-700">
 			{/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -41,7 +28,7 @@ export function HeroSection() {
 			</div>
 			<div className="mb-8">
 				<h1 className="text-4xl md:text-6xl font-bold mb-4">
-					{displayText}
+					<TypeWriterEffectText />
 					<span className="animate-pulse">|</span>
 				</h1>
 				<div className="text-xl text-blue-400 mb-2">
