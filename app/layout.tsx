@@ -1,8 +1,14 @@
 import { Analytics } from '@vercel/analytics/react';
+import { JetBrains_Mono } from 'next/font/google';
 
-import type { Metadata, Viewport } from 'next';
+import type { Metadata } from 'next';
 
 import './global.css';
+
+const jetbrainsMono = JetBrains_Mono({
+	subsets: ['latin'],
+	variable: '--font-mono',
+});
 
 export const metadata: Metadata = {
 	title: 'Parbez',
@@ -15,14 +21,10 @@ export const metadata: Metadata = {
 	metadataBase: new URL('https://parbez.me'),
 };
 
-export const viewport: Viewport = {
-	themeColor: '#235fd3',
-};
-
 export default function RootLayout({ children }: { readonly children: React.ReactNode }) {
 	return (
 		<html lang="en">
-			<body className="bg-black" suppressHydrationWarning>
+			<body className={`${jetbrainsMono.variable} font-mono`}>
 				{children}
 				<Analytics />
 			</body>

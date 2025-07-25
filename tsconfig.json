@@ -29,6 +29,9 @@
 		"incremental": true,
 		"skipLibCheck": true,
 		"verbatimModuleSyntax": true,
+		"paths": {
+			"@/*": ["./*"]
+		},
 		"plugins": [
 			{
 				"name": "next"
