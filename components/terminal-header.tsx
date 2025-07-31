@@ -1,4 +1,5 @@
 import { Terminal } from 'lucide-react';
+import Link from 'next/link';
 
 interface TerminalHeaderProps {
 	readonly currentPath: string;
@@ -19,6 +20,14 @@ export function TerminalHeader({ currentPath }: TerminalHeaderProps) {
 					<span className="text-gray-500">:</span>
 					<span className="text-blue-400">{currentPath}</span>
 				</div>
+				<Link href="/resume">
+					<button
+						className="px-3 py-1 text-sm bg-gray-700 hover:bg-gray-600 text-gray-300 rounded border border-gray-600 transition-colors"
+						type="button"
+					>
+						resume
+					</button>
+				</Link>
 			</div>
 		</div>
 	);

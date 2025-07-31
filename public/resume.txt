@@ -1,0 +1,111 @@
+IMRAN
+Full Stack Developer Building the Future of Web and Mobile
+
+Email: imranbarbhuiya.fsd@gmail.com
+Website: https://parbez.me
+GitHub: https://github.com/imranbarbhuiya
+Location: India
+
+EDUCATION
+B.Sc. in Physics
+
+PROFESSIONAL EXPERIENCE
+
+TEC Spartans
+Nov 2023 - Present
+• Developed the TEC Spartans mobile app, streamlining campaign and event participation
+• Also contributed to backend systems
+• Technologies: Expo React Native, NestJS, Typescript
+• Live: https://theesports.club/spartans
+• iOS: https://apps.apple.com/app/tec-spartans/id6479328964
+• Android: https://play.google.com/store/apps/details?id=club.theesports.spartans
+
+Sofi
+May 2022 - Present
+• Work on a leading anime card collecting Discord bot game with over 27 million users worldwide
+• Solely responsible for developing and maintaining the entire web frontend and backend
+• Technologies: NextJS, NestJS, Typescript, Rust
+• Live: https://sofi.gg
+
+OBScoreboard
+Jan 2025 - June 2025
+• Built a platform enabling live game overlays and remote controls for OBS streamers
+• Technologies: NextJS, Typescript, Firebase
+• Live: https://app.obscoreboard.com/
+
+Flatshare
+2023 | Inactive
+• Backend developer for Flatshare, a mobile app helps with finding flatmates in India
+• Technologies: Express
+• Android: https://play.google.com/store/apps/details?id=com.joinflatshare.club&hl=en_IN
+
+Xofi
+2024 - Present | Under Development
+• CTO & Lead developer for Xofi, an anime merchandise e-commerce site focused on seamless user experience
+• Full-stack role
+• Technologies: NextJS, NestJS (Fastify), PayloadCMS
+• Web: https://xofi.gg
+
+PERSONAL PROJECTS
+
+Ran Programming Language
+• A programming language I built in Go, inspired by interpreter and compiler books
+• Made mostly for fun and learning
+• Technologies: Go
+• GitHub: https://github.com/imranbarbhuiya/ran/
+
+Tagscript
+• A string interpreter that lets users add logic to dynamic content, mostly used in Discord bots
+• Originally in Python, I rewrote it in TypeScript
+• Technologies: TypeScript
+• Docs: https://tagscript.js.org/
+
+ESBuild Node Polyfill
+• A plugin for ESBuild that polyfills Node.js built-in modules and injects globals
+• Created to replace legacy plugins, used by Remix, Cloudflare, and more
+• Technologies: TypeScript
+• GitHub: https://github.com/imranbarbhuiya/esbuild-plugins-node-modules-polyfill
+
+Typedoc Plugin for External Links
+• A plugin for Typedoc that lets you add custom links for external modules
+• This feature is now built into Typedoc itself
+• Technologies: TypeScript
+• GitHub: https://github.com/imranbarbhuiya/typedoc-plugin-external-link
+
+Figma CSS-Tailwind Plugin
+• A Figma plugin that generates Tailwind CSS class names from Figma devmode CSS
+• Technologies: TypeScript
+• Figma: https://www.figma.com/community/plugin/1295012016362159423/css-tailwind-codegen
+
+React Native Headless Mention Input
+• A React Native input library supporting mentions, built for chat features in TEC Spartans
+• Technologies: TypeScript, React Native
+• GitHub: https://github.com/imranbarbhuiya/react-native-headless-mention
+
+BELIEFS & PHILOSOPHY
+• Shipping fast and fix later
+• Once you use typescript or tailwind, you can't go back
+• Open source contribution is the best way to learn
+• Small teams ship faster
+• Reading docs is better than debugging for hours
+
+TECHNICAL SKILLS
+
+Languages:
+• TypeScript
+• Rust
+• Python
+• Go
+
+Frameworks:
+• NextJS
+• NestJS
+• Expo
+• Tauri
+
+ABOUT ME
+• Love building things and contributing to open source—check out my work at GitHub
+• Main stack: NextJS (React), NestJS (Express & Fastify), Expo (React Native), Tauri
+• Languages: Typescript (and JavaScript), Rust, Python, Go
+• From India and have a B.Sc. in Physics
+• Find more at https://parbez.me or email me at imranbarbhuiya.fsd@gmail.com
