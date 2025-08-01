@@ -4,7 +4,7 @@ export default function Resume() {
 	return (
 		<div className="min-h-screen bg-black text-white">
 			<div className="max-w-6xl mx-auto px-8 py-16">
-				<div className="flex justify-between items-start">
+				<div className="flex justify-between items-start max-md:flex-col">
 					<div className="max-w-3xl">
 						<div className="mb-16">
 							<h1 className="text-5xl font-light mb-4 tracking-tight">imran</h1>
@@ -267,14 +267,14 @@ export default function Resume() {
 							</ul>
 						</section>
 					</div>
-					<nav className="hidden md:block sticky top-16">
-						<ul className="space-y-4 text-right">
+					<nav className="md:sticky md:top-16 max-md:mt-12">
+						<ul className="flex flex-wrap gap-6 md:gap-4 md:flex-col md:text-right">
 							<li>
 								<a
 									className="text-gray-400 hover:text-white transition-colors"
 									href="mailto:imranbarbhuiya.fsd@gmail.com"
 								>
-									email ✉️
+									email ↗
 								</a>
 							</li>
 							<li>
