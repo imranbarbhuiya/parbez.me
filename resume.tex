@@ -1,0 +1,315 @@
+%------------------------------------------------------------------------------
+% CV in Latex
+% Author : Charles Rambo
+% Based off of: https://github.com/sb2nov/resume and Jake's Resume on Overleaf
+% Most recently updated version may be found at https://github.com/fizixmastr 
+% License : MIT
+%------------------------------------------------------------------------------
+
+\documentclass[A4,11pt]{article}
+%\documentclass[letterpaper,11pt]{article} %For use in US
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage{xcolor}
+\input{glyphtounicode}
+
+\begin{comment}
+I am by no means a professional when it comes to the CV's/resumes, I have
+received various trainings on how to write a CV and resume from my high 
+school, as well as the Austin College and University of Eastern Finland's
+career counseling departments. As I intend to share my CV as a template, I 
+feel that it is my responsibility to provide explanations of my work.
+\end{comment}
+
+
+%-----FONT OPTIONS-------------------------------------------------------------
+\begin{comment}
+The font of the document will impact not just how readable it is, but how it is
+perceived. In the "The Craft of Scientific Writing" by Michael Alley, shares a
+common fonts for publication as well as their use. I have chosen to use
+Palatino for its legibility, some others are given below. There is far too much
+about typography to discus here. Note: serif fonts have short projecting
+strokes, sans-serif fonts are sans (without) these strokes.
+\end{comment}
+
+
+% serif
+ \usepackage{palatino}
+% \usepackage{times} %This is the default as well
+% \usepackage{charter}
+
+% sans-serif
+% \usepackage{helvet}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+%-----PAGE SETUP---------------------------------------------------------------
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-1cm}
+\addtolength{\evensidemargin}{-1cm}
+\addtolength{\textwidth}{2cm}
+\addtolength{\topmargin}{-1cm}
+\addtolength{\textheight}{2cm}
+
+% Margins for US Letter size
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+%\addtolength{\topmargin}{-.5in}
+%\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0cm}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that .pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-----CUSTOM COMMANDS FOR FORMATTING SECTIONS----------------------------------
+\newcommand{\CVItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\CVSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\CVSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \text{\small#1} & \text{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\CVSubItem}[1]{\CVItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\CVSubHeadingListStart}{\begin{itemize}[leftmargin=0.5cm, label={}]}
+% \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} % Uncomment for US
+\newcommand{\CVSubHeadingListEnd}{\end{itemize}}
+\newcommand{\CVItemListStart}{\begin{itemize}}
+\newcommand{\CVItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%------------------------------------------------------------------------------
+% CV STARTS HERE  %
+%------------------------------------------------------------------------------
+\begin{document}
+
+%-----HEADING------------------------------------------------------------------
+\begin{comment}
+In Europe it is common to include a picture of ones self in the CV. Select
+which heading appropriate for the document you are creating.
+\end{comment}
+
+
+% Without picture
+\begin{center}
+   \textbf{\Huge \scshape Imran Hussain Barbhuiya} \\ \vspace{1pt} %\scshape sets small capital letters, remove if desired
+   \small Full Stack Developer Building the Future of Web and Mobile \\
+   \small +91 6000423502 $|$ 
+   \href{mailto:imranbarbhuiya.fsd@gmail.com}{\underline{imranbarbhuiya.fsd@gmail.com}} $|$\\
+   % Be sure to use a professional *personal* email address
+   \href{https://linkedin.com/in/imranbarbhuiya}{\underline{\color{blue} Linkedin}} $|$
+   % you should adjust you linked in profile name to be professional and recognizable
+   \href{https://github.com/imranbarbhuiya}{\underline{\color{blue} Github}} $|$
+   \href{https://parbez.me/resume}{\underline{\color{blue} Website}} $|$
+   \small India
+\end{center}
+
+
+
+\begin{comment}
+This CV was written for specifically for positions I was applying for in
+academia, and then modified to be a template.
+
+A standard CV is about two pages long where as a resume in the US is one page.
+sections can be added and removed here with this in mind. In my experience, 
+education, and applicable work experience and skills are the most import things
+to include on a resume. For a CV the Europass CV suggests the categories: Work
+Experience, Education and Training, Language Skills, Digital Skills,
+Communication and Interpersonal Skills, Conferences and Seminars, Creative Works
+Driver's License, Hobbies and Interests, Honors and Awards, Management and
+Leadership Skills, Networks and Memberships, Organizational Skills, Projects,
+Publications, Recommendations, Social and Political Activities, Volunteering.
+
+Your goal is to convey a who, what , when, where, why for every item you share. 
+The who is obviously you, but I believe the rest should be done in that order.
+For example below. An employer cares most about the degree held and typically 
+less about the institution or where it is located (This is still good 
+information though). Whatever order you choose be consistent throughout.
+\end{comment}
+
+%-----WORK EXPERIENCE----------------------------------------------------------
+\begin{comment}
+try to briefly explain what you did and why it is relevant to the position you
+are seeking
+\end{comment}
+
+\section{Work Experience}
+  \CVSubHeadingListStart
+%    \CVSubheading %Example
+%      {What you did}{When you worked there}
+%      {Who you worked for}{Where they are located}
+%      \CVItemListStart
+%        \CVItem{Why it is important to this employer}
+%      \CVItemListEnd
+
+    \CVSubheading
+      {Mobile App Developer}{Nov 2023 -- Present}
+      {TEC Spartans}{\href{https://theesports.club/spartans}{\underline{\color{blue} Website}}}
+      \CVItemListStart
+        \CVItem{Developed the TEC Spartans mobile app to streamline campaign and event participation.}
+        \CVItem{Implemented features such as push notifications, user authentication, and real-time updates.}
+        \CVItem{Used Expo Updates to enable over-the-air updates, ensuring users always access the latest version.}
+        \CVItem{Integrated real-time chat functionality using Pusher, allowing users to communicate with each other and the organization.}
+        \CVItem{Built a custom CI/CD pipeline using GitHub Actions and a self-hosted Mac mini, enabling builds triggered by push, PR, comment, and workflow\_dispatch. Automated publishing to the iOS App Store or S3 for local download, reducing cloud costs while maintaining full build automation.}
+        \CVItem{Developed using Expo React Native and NestJS with TypeScript.}
+        \CVItem{Additionally contributed to backend system development.}
+      \CVItemListEnd
+
+    \CVSubheading
+      {Founding Engineer}{May 2022 -- Present}
+      {Sofi (Part Time)}{\href{https://sofi.gg/}{\underline{\color{blue} Website}}}
+      \CVItemListStart
+        \CVItem{Led full web development for an anime-themed game application serving over \textbf{30,000 daily active users}, with a total reach of \textbf{600,000 users} across 15+ countries.}
+        \CVItem{Utilized a diverse tech stack to optimize Sofi’s performance and enhance the user experience: As the main runtime, Node.js manages the workload, orchestrating over 120 shards to distribute the load effectively.}
+        \CVItem{Leveraged Rust for high-performance image generation, utilizing multi-core processing and uses IPC for inter-process communication with TypeScript.}
+        \CVItem{Created a \textbf{Photoshop-style album editor} with advanced features like drag-and-drop, multi-selection, rotation, and rich customization tools.}
+        \CVItem{Implemented payment systems {\href{https://shop.sofi.gg/}{(link)}} supporting one-time gem purchases and recurring patron subscriptions via PayPal and Lemon Squeezy.}
+      \CVItemListEnd
+
+    \CVSubheading
+      {Full Stack Developer}{Jan 2025 -- June 2025}
+      {OBScoreboard}{\href{https://app.obscoreboard.com/}{\underline{\color{blue} Website}}}
+      \CVItemListStart
+        \CVItem{Developed a platform for live game overlays and remote control tools for OBS streamers.}
+        \CVItem{Used Firebase Datastore and Live DB to support real-time overlay draft saving, multi-device editing, and synchronized live updates.}
+        \CVItem{Leveraged SVG with React to dynamically display and update overlay content.}
+        \CVItem{Built using NextJS, TypeScript, and Firebase.}
+        \CVItem{Enabled real-time features and remote control functionality.}
+      \CVItemListEnd
+
+    \CVSubheading
+      {Backend Developer}{2023}
+      {Flatshare (Inactive)}{\href{https://joinflatshare.com/}{\underline{\color{blue} Website}}}
+      \CVItemListStart
+        \CVItem{Worked as backend developer for Flatshare, a mobile app connecting users to potential flatmates in India.}
+        \CVItem{Designed and built backend systems using Express.js.}
+        \CVItem{Supported the successful launch of the Android app on the Play Store.}
+        \CVItem{Created Metabase dashboards to visualize backend metrics and user activity using custom mongodb aggregations.}
+      \CVItemListEnd
+
+    % \CVSubheading
+    %   {CTO \& Lead Developer}{2024 -- Present}
+    %   {Xofi (Under Development)}{\href{https://xofi.gg/}{\underline{\color{blue} Website}}}
+    %   \CVItemListStart
+    %     \CVItem{Overseeing technical direction and full-stack development of an anime merchandise e-commerce platform.}
+    %     \CVItem{Developing using NextJS, NestJS (Fastify), and PayloadCMS.}
+    %     \CVItem{Responsible for overall architecture and long-term technical strategy as CTO.}
+    %   \CVItemListEnd
+
+  \CVSubHeadingListEnd
+
+\section{Projects}
+  \CVSubHeadingListStart
+
+    \CVSubheading
+      {{Ran Programming Language} $|$ \emph{\small{Go}}}{
+   \href{https://github.com/imranbarbhuiya/ran/}{\underline{\color{blue} Link}}}
+      {A programming language built from scratch in Go, inspired by compiler and interpreter design books.}{}
+
+    \CVSubheading
+      {{R.O.T.I.} $|$ \emph{\small{Typescript}}}{
+   \href{https://rotibot.xyz/}{\underline{\color{blue} Link}}}
+      {A Discord moderation bot used in over 50,000 servers.}{}
+
+    \CVSubheading
+      {{Tagscript} $|$ \emph{\small{Typescript}}}{
+   \href{https://tagscript.js.org/}{\underline{\color{blue} Link}}}
+      {A dynamic string interpreter allowing logic and customization in content. Ported from Python to TypeScript.}{}
+
+    \CVSubheading
+      {{esbuild-plugins-node-modules-polyfill} $|$ \emph{\small{Typescript}}}{
+   \href{https://github.com/imranbarbhuiya/esbuild-plugins-node-modules-polyfill}{\underline{\color{blue} Link}}}
+      {An esbuild plugin for polyfilling Node.js core modules and injecting global objects.}{}
+      {}{$ \newline $}{}{Used by major frameworks including Remix and Cloudflare.}
+
+    \CVSubheading
+      {{Typedoc Plugin for External Links} $|$ \emph{\small{Typescript}}}{
+   \href{https://github.com/imranbarbhuiya/typedoc-plugin-external-link}{\underline{\color{blue} Link}}}
+      {A plugin for adding external module links in Typedoc documentation.}{}
+
+    \CVSubheading
+      {{css-tailwind-codegen} $|$ \emph{\small{Typescript}}}{
+   \href{https://www.figma.com/community/plugin/1295012016362159423/css-tailwind-codegen}{\underline{\color{blue} Link}}}
+      {A Figma plugin that generates Tailwind CSS from devmode styles.}{}
+
+    \CVSubheading
+      {{React Native Headless Mention Input} $|$ \emph{\small{Typescript}}}{
+   \href{https://github.com/imranbarbhuiya/react-native-headless-mention}{\underline{\color{blue} Link}}}
+      {An input component with mention support, built for TEC Spartans’ chat functionality.}{}
+
+    \CVSubheading
+      {{Other Open Source Projects}}{
+   \href{https://github.com/imranbarbhuiya?tab=repositories\&q=\&type=source\&language=\&sort=stargazers}{\underline{\color{blue} Link}}}
+      {Additional open-source work and community contributions.}{}
+
+  \CVSubHeadingListEnd
+
+\section{Skills}
+  \begin{itemize}[leftmargin=0.5cm, label={}]
+    \small{\item{
+      \textbf{Languages}{: TypeScript, JavaScript, Rust, Python, Go, Dart} \\
+      \textbf{Frameworks and Libraries}{: React, NextJS, React Native, Expo, Tauri, NestJS, Express.js, Fastify, WebSocket, Socket.io, Pusher, Flutter} \\
+      \textbf{Databases}{: MongoDB, PostgreSQL, Redis, SQLite, MySQL} \\
+      \textbf{Cloud Platforms}{: Vercel, Hetzner, Firebase, Supabase, AWS} \\
+    }}
+  \end{itemize}
+
+
+
+%-----EDUCATION----------------------------------------------------------------
+% \section{Education}
+%   \CVSubHeadingListStart
+%     \CVSubheading
+%       {{Bachelor of Science $|$ \emph{\small{Physics}}}}{Completed}
+%       {University}{India}
+%   \CVSubHeadingListEnd
+
+\section{Extracurricular Activities}
+  \CVSubHeadingListStart
+    \CVSubheading
+      {Teacher (Part Time)}{2023 -- 2025}
+      {Al Mubaswir English Academy}{\href{https://almubaswirenglishacademy.com/}{\underline{\color{blue} Website}}}
+      \CVItemListStart
+        \CVItem{Taught Science, Mathematics, and Computer Science to students of classes IX and X.}
+        \CVItem{Provided academic support and mentorship to guide students through their learning journey.}
+      \CVItemListEnd
+  \CVSubHeadingListEnd
+    
+%------------------------------------------------------------------------------
+\end{document}

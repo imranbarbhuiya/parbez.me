@@ -274,7 +274,7 @@ export default function Resume() {
 									className="text-gray-400 hover:text-white transition-colors"
 									href="mailto:imranbarbhuiya.fsd@gmail.com"
 								>
-									email
+									email ✉️
 								</a>
 							</li>
 							<li>
@@ -302,6 +302,11 @@ export default function Resume() {
 									target="_blank"
 								>
 									x ↗
+								</a>
+							</li>
+							<li>
+								<a className="text-gray-400 hover:text-white transition-colors" download href="/resume.pdf">
+									resume ↙
 								</a>
 							</li>
 						</ul>
