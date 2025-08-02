@@ -250,7 +250,7 @@ export default function Resume() {
 							<h2 className="text-3xl font-light mb-8 tracking-tight">about me</h2>
 							<ul className="space-y-3 text-gray-300">
 								<li>
-									I love building things and contributing to open source—check out my work at{' '}
+									I love building things and contributing to open source. Check out my work at{' '}
 									<a className="underline" href="https://github.com/imranbarbhuiya">
 										github
 									</a>
