@@ -47,7 +47,7 @@ export default function Resume() {
 								<div className="border-l border-gray-800 pl-6">
 									<div className="flex flex-wrap items-center gap-4 mb-3">
 										<h3 className="text-xl font-medium">Sofi</h3>
-										<span className="text-sm text-gray-500 bg-gray-900 px-2 py-1 rounded">may 2022 - present</span>
+										<span className="text-sm text-gray-500 bg-gray-900 px-2 py-1 rounded">oct 2021 - present</span>
 										<Link
 											className="text-sm text-gray-400 hover:text-white transition-colors underline decoration-gray-600 hover:decoration-white"
 											href="https://sofi.gg"
