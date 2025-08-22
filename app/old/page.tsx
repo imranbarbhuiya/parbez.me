@@ -67,7 +67,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		images: ['/banner-old.png'],
 		siteName: 'Parbez',
-		url: 'https://parbez.me',
+		url: 'https://parbez.me/old',
 	},
 };
 

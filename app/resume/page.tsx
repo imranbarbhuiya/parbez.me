@@ -1,5 +1,15 @@
 import Link from 'next/link';
 
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+	openGraph: {
+		images: ['/banner-resume.png'],
+		siteName: 'Parbez',
+		url: 'https://parbez.me/resume',
+	},
+};
+
 export default function Resume() {
 	return (
 		<div className="min-h-screen bg-black text-white">
